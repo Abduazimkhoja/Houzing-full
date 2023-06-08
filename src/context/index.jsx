@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import { PropertiesContext } from "./Properties";
+import PropertiesProvider from "./Properties";
 
 export const Root = createContext();
 
@@ -7,7 +7,7 @@ const RootContext = ({ children }) => {
    
    return (
       <Root.Provider value="">
-         <PropertiesContext>{children}</PropertiesContext>
+         <PropertiesProvider>{children}</PropertiesProvider>
       </Root.Provider>
    );
 };
