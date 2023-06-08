@@ -3,6 +3,6 @@ import Properties from '../../component/Properties'
 
 export default function PropertiesPage() {
   return (
-    <div>PropertiesPage</div>
+    <Properties/>
   )
 }
