@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import RootContext from "./context";
 import "./nullStyle.css";
 import "./index.css";
 import Root from "./root";
-import RootContext from "./context";
+import "./assets/icons/style.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
