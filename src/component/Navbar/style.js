@@ -1,14 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
-
-const NavbarAnimate = keyframes`
-   0% {
-      width: 0%;
-   }
-   100% {
-      width: 100%;
-   }
-`;
+import styled from "styled-components";
 
 export const Nav = styled.nav``;
 
