@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import RootContext from "./context";
 import "./nullStyle.css";
-import "./index.css";
+import "./styleVar.css";
 import Root from "./root";
 import "./assets/icons/style.css"
 

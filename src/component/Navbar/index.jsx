@@ -3,11 +3,13 @@ import { Nav } from "./style";
 import { navbar } from "../../utils/navbar";
 import { Global } from "../../root/styled";
 import { useNavigate } from "react-router-dom";
+import { Button } from "../Generic/button/style";
+
 
 const Navbar = () => {
    const navigate = useNavigate();
    return (
-      <Global.fullBG bg="cyan-blue">
+      <Global.fullBG bg="cyanBlue">
          <Global.container>
             <nav>
                <Nav.list>
@@ -24,7 +26,7 @@ const Navbar = () => {
                      })}
                   </Nav.item>
                   <Nav.item>
-                     <button>login</button>
+                     <Button type="white" onClick={() => navigate("/login")}>login</Button>
                   </Nav.item>
                </Nav.list>
             </nav>
