@@ -25,7 +25,7 @@ Nav.link = styled(NavLink)`
    font-size: 16px;
    line-height: 24px;
 
-   color: #ffffff;
+   color: var(--color-white);
    text-transform: capitalize;
 
 
@@ -39,7 +39,7 @@ Nav.link = styled(NavLink)`
       left: 0;
 
       display: block;
-      background: #fff;
+      background: var(--color-white);
       transition: width 0.3s ease;
    }
    &:hover,
@@ -48,7 +48,7 @@ Nav.link = styled(NavLink)`
          content: "";
          width: 100%;
          height: 2px;
-         background: #fff;
+         background: var(--color-white);
       }
    }
 `;
