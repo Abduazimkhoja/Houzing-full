@@ -31,6 +31,10 @@ const DefaultStyle = css`
 
    padding: 0 16px;
 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
    font-weight: 400;
    font-size: ${(props) => props.fontSize || "14px"};
    line-height: 20px;
