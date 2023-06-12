@@ -5,6 +5,7 @@ import "./nullStyle.css";
 import "./styleVar.css";
 import Root from "./root";
 import "./assets/icons/style.css"
+import 'antd/dist/reset.css'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

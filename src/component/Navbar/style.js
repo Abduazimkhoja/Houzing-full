@@ -6,6 +6,8 @@ export const Nav = styled.nav``;
 Nav.list = styled.ul`
    height: 64px;
 
+   margin: 0;
+
    display: flex;
    align-items: center;
    justify-content: space-between;

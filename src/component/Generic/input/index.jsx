@@ -5,17 +5,11 @@ import useUniqueId from "../../../hooks/useId";
 export const Input = ({ type, placeholder, width, height, icon, bg }) => {
    const useId = useUniqueId();
    return (
-      <InputWrap>
+      <InputWrap width={width} height={height} bg={bg}>
          {icon && <i className={icon}></i>}
-         <InputWrap.input
-            bg={bg}
-            width={width}
-            height={height}
-            placeholder={placeholder}
-            type={type}
-         />
+         <InputWrap.input placeholder={placeholder} type={type} />
       </InputWrap>
    );
 };
 
-export default Input
+export default Input;
