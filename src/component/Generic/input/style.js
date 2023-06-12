@@ -1,75 +1,45 @@
-// import { css, styled } from "styled-components";
+import { css, styled } from "styled-components";
 
-// const filter = (props) => {
-//    return {
-//       gray: css`
-//          width: 200px;
-//          height: 44px;
+const filter = (props) => {
 
-//          padding: 0 16px;
+}
 
-//          color: var(--color-cyan-blue);
-//          border: 1px solid var(--color-white-lilac);
-//       `,
+export const InputWrap = styled.div`
+   width: ${props => props.width || "100%"};
+   height: ${props => props.height || "44px"};
 
-//       default: css`
-//          width: 100%;
-//          padding: 4px 8px 4px 0;
-//          color: var(--color-cyan-blue);
-//          border-bottom: 2px solid var(--color-white-lilac);
-//          transition: border-color .3s ease;
+   position: relative;
 
-//          &:hover,
-//          &:focus {
-//             border-color: var(--color-blue);
-//          }
+   display: flex;
+   align-items: center;
+   gap: 8px;
 
-//          &::placeholder {
-//             color: var(--color-gray);
-//          }
-//       `,
-//    }[props.view || "default"];
-// };
+   padding: 0 16px;
 
-// export const Position = styled.div`
-//    height: 30px;
-//    position: relative;
+   color: var(--color-cyan-blue);
 
-//    &:focus-within {
-//       & label {
-//          top: -10px;
-//       }
-//    }
-// `;
+   border-radius: 1px;
+   border: 1px solid var(--color-white-smoke);
+   background: ${props => props.bg || "--color-white"};
 
-// export const InputStyle = styled.input`
-//    width: 100%;
-//    height: 100%;
-//    padding: 4px 8px 4px 0;
+   transition: border-color .3s ease;
 
-//    display: flex;
-//    align-items: center;
+   &:focus-within {
+      border-color: var(--color-blue);
+   }
+`;
 
-//    border-radius: 2px;
-//    border-bottom: 2px solid var(--color-white-lilac);
+InputWrap.input = styled.input`
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   color: var(--color-cyan-blue);
+   &::placeholder {
+      color: var(--color-cyan-blue);
+   }
+`;
 
-//    font-size: 14px;
-//    color: var(--color-cyan-blue);
-
-//    transition: border-color 0.3s ease;
-
-//    &:hover,
-//    &:focus { 
-//       border-color: var(--color-blue);
-//    } 
-
-//    ${(props) => console.log(props.status)}
-// `;
-
-// export const PlaceholderLabel = styled.label`
+// InputWrap.label = styled.label`
 //    position: absolute;
-//    top: 8px; 
-//    font-size: 14px;
-
-//    transition: top 0.2s ease;
-// `;
+//    top: 15px;
+// `

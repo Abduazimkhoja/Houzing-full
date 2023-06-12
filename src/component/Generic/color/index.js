@@ -7,6 +7,7 @@ const colors = (color) =>
       red: "--color-red",
       yellow: "--color-yellow",
       white: "--color-white",
+      whiteSmoke: "--color-white-smoke"
    }[color || "white"]})`;
 
 export default colors;
