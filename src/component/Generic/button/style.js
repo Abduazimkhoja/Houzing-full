@@ -62,3 +62,5 @@ export const Button = styled.button`
    ${DefaultStyle}
    ${colorType}
 `;
+
+export default Button

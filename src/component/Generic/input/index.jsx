@@ -17,3 +17,5 @@ export const Input = ({ type, placeholder, width, height, icon, bg }) => {
       </InputWrap>
    );
 };
+
+export default Input
