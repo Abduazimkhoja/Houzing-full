@@ -1,11 +1,12 @@
 import React from 'react'
 import { Input } from '../Generic/input'
+import { Search } from '../Search'
 
 const Home = () => {
   return (
-    <div>
-      <Input type = "search" icon = "icon-search" placeholder = "Enter an address, neighborhood, city, or ZIP code"/>
-    </div>
+    <>
+      home
+    </>
   )
 }
 export default Home

@@ -5,7 +5,6 @@ const colorType = (props) => {
    return {
       entirelyBlue: css`
          background: ${colors("blue")};
-         border: 1px solid ${colors("blue")};
       `,
       cyanBlue: css`
          color: ${colors("cyanBlue")};
@@ -18,15 +17,15 @@ const colorType = (props) => {
          color: ${colors("blue")};
          border: 1px solid ${colors("blue")};
       `,
-      whiteLilac: css`
+      whiteSmoke: css`
          color: ${colors("cyanBlue")};
-         border: 1px solid ${colors("whiteLilac")};
+         border: 1px solid ${colors("whiteSmoke")};
       `,
    }[props.type || "entirelyBlue"];
 };
 
 const DefaultStyle = css`
-   width: ${(props) => props.width || "130px"};
+   min-width: ${(props) => props.width || "130px"};
    height: ${(props) => props.height || "44px"};
 
    padding: 0 16px;
@@ -34,6 +33,7 @@ const DefaultStyle = css`
    display: flex;
    align-items: center;
    justify-content: center;
+   gap: 8px;
 
    font-weight: 400;
    font-size: ${(props) => props.fontSize || "14px"};
@@ -41,7 +41,7 @@ const DefaultStyle = css`
 
    border-radius: 2px;
 
-   color: ${colors("white")};
+   color: var(--color-white);
    background: none;
 
    transition: transform 0.2s ease, border-width 0.2s ease;
@@ -49,7 +49,6 @@ const DefaultStyle = css`
 
    &:hover {
       transform: scale(1.05);
-      border-width: 2px;
    }
 
    &:active {

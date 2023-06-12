@@ -1,12 +1,10 @@
 import { css, styled } from "styled-components";
 
-const filter = (props) => {
-
-}
+const filter = (props) => {};
 
 export const InputWrap = styled.div`
-   width: ${props => props.width || "200px"};
-   height: ${props => props.height || "44px"};
+   width: ${(props) => props.width || "200px"};
+   height: ${(props) => props.height || "44px"};
 
    position: relative;
 
@@ -20,9 +18,9 @@ export const InputWrap = styled.div`
 
    border-radius: 1px;
    border: 1px solid var(--color-white-smoke);
-   background: ${props => props.bg || "--color-white"};
+   background: ${(props) => props.bg || "--color-white"};
 
-   transition: border-color .3s ease;
+   transition: border-color 0.3s ease;
 
    &:focus-within {
       border-color: var(--color-blue);
@@ -34,12 +32,9 @@ InputWrap.input = styled.input`
    height: 100%;
    font-size: 14px;
    color: var(--color-cyan-blue);
+
    &::placeholder {
+      font-size: 14px;
       color: var(--color-cyan-blue);
    }
 `;
-
-// InputWrap.label = styled.label`
-//    position: absolute;
-//    top: 15px;
-// `
