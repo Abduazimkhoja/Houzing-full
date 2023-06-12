@@ -29,8 +29,10 @@ Global.h2 = styled.h2`
    font-size: 44px;
    line-height: 48px;
    letter-spacing: -0.02em;
+   text-align: center;
 
-   color: ${(props) => colors(props.color) || "var(--color-white)"};
+   color: ${(props) =>
+      props.color ? colors(props.color) : "var(--color-white)"};
 `;
 
 Global.h3 = styled.h3`
@@ -41,12 +43,17 @@ Global.h3 = styled.h3`
    text-align: center;
    letter-spacing: -0.02em;
 
-   color: ${(props) => colors(props.color) || "var(--color-cyan-blue)"};
+   color: ${(props) =>
+      props.color ? colors(props.color) : "var(--color-cyan-blue)"};
 `;
+
 Global.h4 = styled.h4`
    font-weight: ${(props) => props.fw || 400};
    font-size: 16px;
    line-height: 24px;
 
-   color: ${(props) => colors(props.color) || "var(--color-gray)"};
+   text-transform: capitalize;
+
+   color: ${(props) =>
+      props.color ? colors(props.color) : "var(--color-cyan-blue)"};
 `;

@@ -18,7 +18,7 @@ export const InputWrap = styled.div`
 
    border-radius: 1px;
    border: 1px solid var(--color-white-smoke);
-   background: ${(props) => props.bg || "--color-white"};
+   background: ${(props) => props.bg || "var(--color-white)"};
 
    transition: border-color 0.3s ease;
 
