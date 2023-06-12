@@ -5,7 +5,7 @@ const filter = (props) => {
 }
 
 export const InputWrap = styled.div`
-   width: ${props => props.width || "100%"};
+   width: ${props => props.width || "200px"};
    height: ${props => props.height || "44px"};
 
    position: relative;
