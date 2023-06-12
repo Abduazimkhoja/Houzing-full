@@ -42,7 +42,7 @@ const DefaultStyle = css`
    border-radius: 2px;
 
    color: var(--color-white);
-   background: none;
+   background: ${props => props.bg || "none"};
 
    transition: transform 0.2s ease, border-width 0.2s ease;
    

@@ -1,15 +1,15 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { InputWrap } from "./style";
 import useUniqueId from "../../../hooks/useId";
 
-export const Input = ({ type, placeholder, width, height, icon, bg }) => {
+export const Input = forwardRef(({ type, placeholder, width, height, icon, bg , id}, ref) => {
    const useId = useUniqueId();
    return (
-      <InputWrap width={width} height={height} bg={bg}>
+      <InputWrap ref={ref} key={id} width={width} height={height} bg={bg}>
          {icon && <i className={icon}></i>}
          <InputWrap.input placeholder={placeholder} type={type} />
       </InputWrap>
    );
-};
+});
 
 export default Input;
