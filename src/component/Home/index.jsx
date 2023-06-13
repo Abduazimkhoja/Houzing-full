@@ -1,6 +1,6 @@
 import React from 'react'
-import { Input } from '../Generic/input'
-import { Search } from '../Search'
+// import { Input } from '../Generic/input'
+// import { Search } from '../Search'
 
 const Home = () => {
   return (

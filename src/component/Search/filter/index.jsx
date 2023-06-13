@@ -11,7 +11,7 @@ export const SearchFilter = () => {
       <Filter>
          {FilterData.map(({ id, subtitle, inputs }) => (
             <Filter.block key={id}>
-               <Global.h4 fw={600}>{subtitle}</Global.h4>
+               <Global.H4 fw={600}>{subtitle}</Global.H4>
                <Filter.inputs>
                   {inputs.map(({ id, type, placeholder, ref}) => (
                      <Input key={id} type={type} placeholder={placeholder} />
