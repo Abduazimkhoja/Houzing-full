@@ -6,7 +6,7 @@ export const Filter = styled.div`
    background: var(--color-white);
 `;
 
-Filter.block = styled.div`
+Filter.Block = styled.div`
    padding: 0 30px;
    margin-bottom: 20px;
 `;

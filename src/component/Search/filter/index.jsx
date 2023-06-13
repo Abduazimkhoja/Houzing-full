@@ -10,14 +10,14 @@ export const SearchFilter = () => {
    return (
       <Filter>
          {FilterData.map(({ id, subtitle, inputs }) => (
-            <Filter.block key={id}>
+            <Filter.Block key={id}>
                <Global.H4 fw={600}>{subtitle}</Global.H4>
                <Filter.Inputs>
                   {inputs.map(({ id, type, placeholder, ref}) => (
                      <Input key={id} type={type} placeholder={placeholder} />
                   ))}
                </Filter.Inputs>
-            </Filter.block>
+            </Filter.Block>
          ))}
          <Filter.Footer>
             <Button type="cyanBlue">Cancel</Button>
