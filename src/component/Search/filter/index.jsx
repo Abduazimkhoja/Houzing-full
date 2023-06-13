@@ -13,8 +13,8 @@ export const SearchFilter = () => {
             <Filter.block key={id}>
                <Global.h4 fw={600}>{subtitle}</Global.h4>
                <Filter.inputs>
-                  {inputs.map(({ id, type, placeholder, ref }) => (
-                     <Input ref={ref} id={id} type={type} placeholder={placeholder} />
+                  {inputs.map(({ id, type, placeholder, ref}) => (
+                     <Input key={id} type={type} placeholder={placeholder} />
                   ))}
                </Filter.inputs>
             </Filter.block>
