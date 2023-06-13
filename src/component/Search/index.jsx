@@ -19,7 +19,9 @@ export const Search = () => {
                      placeholder="Enter an address, neighborhood, city, or ZIP code"
                   />
                   <Dropdown
-                     overlay={<SearchFilter />}
+
+                     trigger={["click"]}
+                     dropdownRender={() => <SearchFilter />}
                      placement="bottomRight"
                      arrow={{ pointAtCenter: true }}
                   >
