@@ -1,7 +1,3 @@
-import useId from "../hooks/useId";
-
-// const useId = useUniqueId();
-
 export const FilterData = [
    {
       id: 1,

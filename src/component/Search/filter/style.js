@@ -11,12 +11,12 @@ Filter.block = styled.div`
    margin-bottom: 20px;
 `;
 
-Filter.inputs = styled.div`
+Filter.Inputs = styled.div`
    display: flex;
    gap: 20px;
 `;
 
-Filter.footer = styled.div`
+Filter.Footer = styled.div`
    height: 84px;
    padding: 20px 30px;
 

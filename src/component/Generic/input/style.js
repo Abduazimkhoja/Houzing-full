@@ -27,7 +27,7 @@ export const InputWrap = styled.div`
    }
 `;
 
-InputWrap.input = styled.input`
+InputWrap.Input = styled.input`
    width: 100%;
    height: 100%;
    font-size: 14px;

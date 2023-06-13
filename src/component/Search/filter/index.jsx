@@ -12,17 +12,17 @@ export const SearchFilter = () => {
          {FilterData.map(({ id, subtitle, inputs }) => (
             <Filter.block key={id}>
                <Global.H4 fw={600}>{subtitle}</Global.H4>
-               <Filter.inputs>
+               <Filter.Inputs>
                   {inputs.map(({ id, type, placeholder, ref}) => (
                      <Input key={id} type={type} placeholder={placeholder} />
                   ))}
-               </Filter.inputs>
+               </Filter.Inputs>
             </Filter.block>
          ))}
-         <Filter.footer>
+         <Filter.Footer>
             <Button type="cyanBlue">Cancel</Button>
             <Button >Submit</Button>
-         </Filter.footer>
+         </Filter.Footer>
       </Filter>
    );
 };
