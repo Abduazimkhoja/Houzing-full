@@ -3,11 +3,14 @@ import colors from "../component/Generic/color";
 
 export const Global = styled.div``;
 
-Global.fullBG = styled.section`
+
+
+Global.FillBg = styled.section`
    background: ${(props) => colors(props.bg)};
 `;
 
-Global.container = styled.div`
+
+Global.Container = styled.div`
    max-width: 1240px;
    width: 100%;
 
@@ -15,7 +18,7 @@ Global.container = styled.div`
    padding: 0 30px;
 `;
 
-Global.logo = styled.i.attrs((props) => ({ className: "icon-logo" }))`
+Global.Logo = styled.i.attrs((props) => ({ className: "icon-logo" }))`
    background: none;
 
    font-size: 40px;
@@ -24,7 +27,7 @@ Global.logo = styled.i.attrs((props) => ({ className: "icon-logo" }))`
    cursor: pointer;
 `;
 
-Global.h2 = styled.h2`
+Global.H2 = styled.h2`
    font-weight: 700;
    font-size: 44px;
    line-height: 48px;
@@ -35,7 +38,7 @@ Global.h2 = styled.h2`
       props.color ? colors(props.color) : "var(--color-white)"};
 `;
 
-Global.h3 = styled.h3`
+Global.H3 = styled.h3`
    font-weight: 600;
    font-size: 28px;
    line-height: 36px;
@@ -47,7 +50,7 @@ Global.h3 = styled.h3`
       props.color ? colors(props.color) : "var(--color-cyan-blue)"};
 `;
 
-Global.h4 = styled.h4`
+Global.H4 = styled.h4`
    font-weight: ${(props) => props.fw || 400};
    font-size: 16px;
    line-height: 24px;

@@ -9,8 +9,8 @@ import { SearchFilter } from "./filter";
 export const Search = () => {
    return (
       <>
-         <Global.fullBG bg="white">
-            <Global.container>
+         <Global.FillBg bg="white">
+            <Global.Container>
                <SearchWrap>
                   <Input
                      width="100%"
@@ -33,8 +33,8 @@ export const Search = () => {
                      <i className="icon-loupe"></i> Search
                   </Button>
                </SearchWrap>
-            </Global.container>
-         </Global.fullBG>
+            </Global.Container>
+         </Global.FillBg>
          <Outlet />
       </>
    );

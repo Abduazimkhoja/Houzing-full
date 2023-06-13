@@ -1,6 +1,6 @@
-import { css, styled } from "styled-components";
+import { styled } from "styled-components";
 
-const filter = (props) => {};
+// const filter = (props) => {};
 
 export const InputWrap = styled.div`
    width: ${(props) => props.width || "200px"};
