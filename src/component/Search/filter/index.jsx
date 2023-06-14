@@ -9,6 +9,7 @@ export const SearchFilter = ({ setDropdownStatus }) => {
    let [refPick, serRefPick] = useState({})
    const allRef = useRef({})
    console.log(refPick);
+   console.log(allRef);
    return (
       <Filter>
          {FilterData.map(({ id, subtitle, inputs }) => (
@@ -16,7 +17,7 @@ export const SearchFilter = ({ setDropdownStatus }) => {
                <Global.H4 fw={600}>{subtitle}</Global.H4>
                <Filter.Inputs >
                   {inputs.map(({ id, type, placeholder, ref: refInput}) => (
-                     <Input key={id} onClick = {() => serRefPick(allRef.current[refInput])} ref = {el => {allRef.current[refInput] = el}} type={type} placeholder={placeholder} />
+                     <Input key={id} onClick = {() => serRefPick(allRef.current[refInput].children[0].value)} ref = {el => {allRef.current[refInput] = el}} type={type} placeholder={placeholder} />
                   ))}
                </Filter.Inputs>
             </Filter.Block> 
