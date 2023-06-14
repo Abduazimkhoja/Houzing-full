@@ -5,7 +5,7 @@ import Input from "../../Generic/input";
 import { FilterData } from "../../../utils/Filter";
 import { Button } from "../../Generic";
 
-export const SearchFilter = () => {
+export const SearchFilter = ({setOpen}) => {
    
    return (
       <Filter>
@@ -20,8 +20,8 @@ export const SearchFilter = () => {
             </Filter.Block>
          ))}
          <Filter.Footer>
-            <Button type="cyanBlue">Cancel</Button>
-            <Button >Submit</Button>
+            <Button onClick={() => setOpen(false)} type="cyanBlue">Cancel</Button>
+            <Button  onClick={() => setOpen(false)}>Submit</Button>
          </Filter.Footer>
       </Filter>
    );
