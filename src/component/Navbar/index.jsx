@@ -12,22 +12,22 @@ const Navbar = () => {
          <Global.FillBg bg="cyanBlue">
             <Global.Container>
                <nav>
-                  <Nav.list>
-                     <Nav.item>
+                  <Nav.List>
+                     <Nav.Item>
                         <Global.Logo onClick={() => navigate("/home")} />
-                     </Nav.item>
-                     <Nav.item>
+                     </Nav.Item>
+                     <Nav.Item>
                         {navbar.map(({ id, path, title, hidden }) => {
                            return (
                               !hidden && (
-                                 <Nav.link key={id()} to={path}>
+                                 <Nav.Link key={id()} to={path}>
                                     {title}
-                                 </Nav.link>
+                                 </Nav.Link>
                               )
                            );
                         })}
-                     </Nav.item>
-                     <Nav.item>
+                     </Nav.Item>
+                     <Nav.Item>
                         <Button
                         width="120px"
                            type="white"
@@ -35,8 +35,8 @@ const Navbar = () => {
                         >
                            login
                         </Button>
-                     </Nav.item>
-                  </Nav.list>
+                     </Nav.Item>
+                  </Nav.List>
                </nav>
             </Global.Container>
          </Global.FillBg>

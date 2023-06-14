@@ -5,24 +5,24 @@ import Input from "../../Generic/input";
 import { FilterData } from "../../../utils/Filter";
 import { Button } from "../../Generic";
 
-export const SearchFilter = () => {
+export const SearchFilter = ({setOpen}) => {
    
    return (
       <Filter>
          {FilterData.map(({ id, subtitle, inputs }) => (
-            <Filter.block key={id}>
+            <Filter.Block key={id}>
                <Global.H4 fw={600}>{subtitle}</Global.H4>
-               <Filter.inputs>
+               <Filter.Inputs>
                   {inputs.map(({ id, type, placeholder, ref}) => (
                      <Input key={id} type={type} placeholder={placeholder} />
                   ))}
-               </Filter.inputs>
-            </Filter.block>
+               </Filter.Inputs>
+            </Filter.Block>
          ))}
-         <Filter.footer>
-            <Button type="cyanBlue">Cancel</Button>
-            <Button >Submit</Button>
-         </Filter.footer>
+         <Filter.Footer>
+            <Button onClick={() => setOpen(false)} type="cyanBlue">Cancel</Button>
+            <Button  onClick={() => setOpen(false)}>Submit</Button>
+         </Filter.Footer>
       </Filter>
    );
 };

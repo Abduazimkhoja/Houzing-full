@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Input } from "../Generic";
 import { Global } from "../../root/styled";
 import { Outlet } from "react-router-dom";
@@ -7,6 +7,8 @@ import { Dropdown } from "antd";
 import { SearchFilter } from "./filter";
 
 export const Search = () => {
+   const [open, setOpen] = useState(false);
+
    return (
       <>
          <Global.FillBg bg="white">
@@ -19,9 +21,12 @@ export const Search = () => {
                      placeholder="Enter an address, neighborhood, city, or ZIP code"
                   />
                   <Dropdown
-
+                     open={open}
+                     onOpenChange={(open) => {
+                        setOpen(open);
+                     }}
                      trigger={["click"]}
-                     dropdownRender={() => <SearchFilter />}
+                     dropdownRender={() => <SearchFilter setOpen={setOpen} />}
                      placement="bottomRight"
                      arrow={{ pointAtCenter: true }}
                   >

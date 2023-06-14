@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { navbar } from "../utils/navbar";
 import Navbar from "../component/Navbar";
-import { Input } from "../component/Generic/input";
 import { Search } from "../component/Search";
 
 const Root = () => {

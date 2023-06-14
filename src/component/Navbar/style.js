@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav``;
 
-Nav.list = styled.ul`
+Nav.List = styled.ul`
    height: 64px;
 
    margin: 0;
@@ -15,12 +15,12 @@ Nav.list = styled.ul`
    gap: 64px;
 `;
 
-Nav.item = styled.li`
+Nav.Item = styled.li`
    display: flex;
    gap: 64px;
 `;
 
-Nav.link = styled(NavLink)`
+Nav.Link = styled(NavLink)`
    position: relative;
 
    font-weight: 400;
