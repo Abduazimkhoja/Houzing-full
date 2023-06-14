@@ -7,7 +7,7 @@ import { Dropdown } from "antd";
 import { SearchFilter } from "./filter";
 
 export const Search = () => {
-   const [open, setOpen] = useState(false);
+   const [DropdownStatus, setDropdownStatus] = useState(false);
 
    return (
       <>
@@ -21,12 +21,12 @@ export const Search = () => {
                      placeholder="Enter an address, neighborhood, city, or ZIP code"
                   />
                   <Dropdown
-                     open={open}
-                     onOpenChange={(open) => {
-                        setOpen(open);
+                     open={DropdownStatus}
+                     onOpenChange={(DropdownStatus) => {
+                        setDropdownStatus(DropdownStatus);
                      }}
                      trigger={["click"]}
-                     dropdownRender={() => <SearchFilter setOpen={setOpen} />}
+                     dropdownRender={() => <SearchFilter setDropdownStatus={setDropdownStatus} />}
                      placement="bottomRight"
                      arrow={{ pointAtCenter: true }}
                   >
@@ -44,3 +44,5 @@ export const Search = () => {
       </>
    );
 };
+
+export default Search
