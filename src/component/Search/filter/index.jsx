@@ -14,7 +14,7 @@ export const SearchFilter = ({setOpen}) => {
                <Global.H4 fw={600}>{subtitle}</Global.H4>
                <Filter.Inputs>
                   {inputs.map(({ id, type, placeholder, ref}) => (
-                     <Input onClick = {setRefPick(ref)} key={id} type={type} placeholder={placeholder} />
+                     <Input onClick = {() => setRefPick(ref)} key={id} type={type} placeholder={placeholder} />
                   ))}
                </Filter.Inputs>
             </Filter.Block>
