@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 
 export const CarouselWrap = styled.section`
    position: relative;
-   background: "#364d79";
 
    .slick-dots {
       align-items: center;
@@ -19,7 +18,7 @@ export const CarouselWrap = styled.section`
             width: 10px;
             height: 10px;
             button {
-               border: 2px solid #ffffff;
+               border: 2px solid var(--color-white);
                background: none;
             }
          }
@@ -34,8 +33,6 @@ export const CarouselWrap = styled.section`
       }
    }
 `;
-
-
 
 CarouselWrap.Buttons = styled.div`
    max-width: 1440px;
@@ -64,7 +61,7 @@ CarouselWrap.Button = styled.button`
 
    transition: transform 0.3s ease, background 0.3s ease;
    &:hover {
-      background: #ffffff40;
+      background: var(--color-gray);
       ${(props) =>
          props.name === "left"
             ? "transform: translateY(-50%) scale(1.05);"

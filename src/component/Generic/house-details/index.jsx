@@ -3,11 +3,11 @@ import { DetailsWrap } from "./style";
 import { Global } from "../../../root/style";
 import { detailsData } from "../../../utils/Details";
 
-export const Details = ({ beds, baths, garage, sqFt, color, width }) => {
+export const Details = ({ beds, baths, garage, sqFt, color, width, margin }) => {
    const details = [beds, baths, garage, sqFt];
 
    return (
-      <DetailsWrap width={width} color={color}>
+      <DetailsWrap width={width} color={color} margin={margin}>
          {detailsData.map(({ id, title, icon }, index) => {
             return (
                <DetailsWrap.Block key={id}>

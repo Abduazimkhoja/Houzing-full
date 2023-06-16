@@ -1,9 +1,7 @@
 import React from "react";
-import Carousel from "../Carousel";
+import { Carousel, Button, Details } from "../Generic";
 import { IntroBlock } from "./style";
 import { Global } from "../../root/style";
-import Button from "../Generic/button/style";
-import Details from "../Generic/house-details";
 
 const Intro = () => {
    return (
@@ -16,10 +14,12 @@ const Intro = () => {
             />
             <IntroBlock.Content>
                <Global.H2>title</Global.H2>
-               <Global.H4 color = "white">subtitle</Global.H4>
-               <Details beds ="4" baths = "4" garage = "4" sqFt = "4" />
-               <Global.H3 color = "white">$price</Global.H3>
-               <Button type="white" width = "180px">Read more</Button>
+               <Global.H4 color="white">subtitle</Global.H4>
+               <Details margin = "24px" beds="4" baths="4" garage="4" sqFt="4" />
+               <Global.H3 color="white">$price</Global.H3>
+               <Button type="white" width="180px">
+                  Read more
+               </Button>
             </IntroBlock.Content>
          </IntroBlock>
          <IntroBlock>1</IntroBlock>

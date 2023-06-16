@@ -1,2 +1,5 @@
 export {default as Button} from "./button/style"
 export {default as Input} from "./input"
+export {default as CardHouse} from "./card/house"
+export {default as Details} from "./house-details"
+export {default as Carousel} from "./Carousel"
