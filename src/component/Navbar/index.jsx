@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav } from "./style";
 import { navbar } from "../../utils/navbar";
-import { Global } from "../../root/styled";
+import { Global } from "../../root/style";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../Generic";
 
