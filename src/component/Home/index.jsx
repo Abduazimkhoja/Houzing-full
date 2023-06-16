@@ -1,12 +1,11 @@
-import React from 'react'
-// import { Input } from '../Generic/input'
-// import { Search } from '../Search'
+import React from "react";
+import Intro from "../Intro";
 
 const Home = () => {
-  return (
-    <>
-      home
-    </>
-  )
-}
-export default Home
+   return (
+      <>
+         <Intro />
+      </>
+   );
+};
+export default Home;
