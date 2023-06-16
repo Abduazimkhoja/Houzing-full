@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Carousel as AntCarousel } from "antd";
-import { CarouselWrap, Intro } from "./style";
+import { CarouselWrap } from "./style";
 
 
 
