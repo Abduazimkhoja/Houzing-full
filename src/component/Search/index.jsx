@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Input } from "../Generic";
-import { Global } from "../../root/styled";
+import { Global } from "../../root/style";
 import { Outlet } from "react-router-dom";
 import { SearchWrap } from "./style";
 import { Dropdown } from "antd";
