@@ -3,14 +3,12 @@ import colors from "../component/Generic/color";
 
 export const Global = styled.div``;
 
-
-
 Global.FillBg = styled.section`
    background: ${(props) => colors(props.bg)};
 `;
 
-
 Global.Container = styled.div`
+   position: relative;
    max-width: 1240px;
    width: 100%;
 

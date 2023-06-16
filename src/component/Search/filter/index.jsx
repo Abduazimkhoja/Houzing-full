@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Filter } from "./style";
-import { Global } from "../../../root/styled";
+import { Global } from "../../../root/style";
 import Input from "../../Generic/input";
 import { FilterData } from "../../../utils/Filter";
 import { Button } from "../../Generic";
