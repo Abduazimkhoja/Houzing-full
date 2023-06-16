@@ -14,6 +14,10 @@ export const DetailsWrap = styled.ul`
    i::before {
       color: ${(props) => colors(props.color) || "var(--color-white)"};
    }
+
+   i {
+      font-size: 19px;
+   }
 `;
 
 DetailsWrap.Block = styled.li`

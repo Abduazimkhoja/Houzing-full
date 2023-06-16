@@ -13,10 +13,10 @@ const Intro = () => {
                alt=""
             />
             <IntroBlock.Content>
-               <Global.H2>title</Global.H2>
+               <Global.H2 margin = "8px">title</Global.H2>
                <Global.H4 color="white">subtitle</Global.H4>
                <Details margin = "24px" bed="4" bath="4" garage="4" sqFt="4" />
-               <Global.H3 color="white">$price</Global.H3>
+               <Global.H3 margin="48px" color="white">$price</Global.H3>
                <Button type="white" width="180px">
                   Read more
                </Button>
