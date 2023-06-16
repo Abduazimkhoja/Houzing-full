@@ -31,4 +31,12 @@ IntroBlock.Content = styled.div`
    justify-content: center;
 
    text-align: center;
+
+   h2 {
+      margin-bottom: 8px;
+   }
+
+   h3 {
+      margin-bottom: 48px;
+   }
 `;

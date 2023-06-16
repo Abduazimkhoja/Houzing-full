@@ -3,13 +3,14 @@ import colors from "../color";
 
 export const DetailsWrap = styled.ul`
    width: ${(props) => props.width || "340px"};
+   margin: ${props => props.margin || 0} 0;
 
    display: flex;
    align-items: center;
    justify-content: space-between;
    gap: 20px;
-   
-   & *,
+
+   h4,
    i::before {
       color: ${(props) => colors(props.color) || "var(--color-white)"};
    }
