@@ -5,14 +5,13 @@ export const IntroBlock = styled.div`
 
    position: relative;
 
-   background: #000;
-   color: #fff;
+   color: var(--color-white);
 
    .intro__image {
       width: inherit;
       height: inherit;
 
-      filter: brightness(40%);
+      filter: brightness(0.35);
 
       object-position: center;
       object-fit: cover;
