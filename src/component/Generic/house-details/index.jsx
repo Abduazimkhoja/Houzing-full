@@ -1,38 +1,25 @@
 import React from "react";
 import { DetailsWrap } from "./style";
 import { Global } from "../../../root/style";
+import { detailsData } from "../../../utils/Details";
 
 export const Details = ({ beds, baths, garage, sqFt, color, width }) => {
+   const details = [beds, baths, garage, sqFt];
+
    return (
-      <DetailsWrap width = {width}>
-         <DetailsWrap.Block>
-            <i
-               style={{ color: { color } }}
-               className="details__icon icon-bed"
-            ></i>
-            <Global.H4 color={color || "white"}>{beds || 0} Beds</Global.H4>
-         </DetailsWrap.Block>
-         <DetailsWrap.Block>
-            <i
-               style={{ color: { color } }}
-               className="details__icon icon-bath"
-            ></i>
-            <Global.H4 color={color || "white"}>{baths || 0} Baths</Global.H4>
-         </DetailsWrap.Block>
-         <DetailsWrap.Block>
-            <i
-               style={{ color: { color } }}
-               className="details__icon icon-car"
-            ></i>
-            <Global.H4 color={color || "white"}>{garage || 0} Garage</Global.H4>
-         </DetailsWrap.Block>
-         <DetailsWrap.Block>
-            <i
-               style={{ color: { color } }}
-               className="details__icon icon-ruler"
-            ></i>
-            <Global.H4 color={color || "white"}>{sqFt || 0} Sq Ft</Global.H4>
-         </DetailsWrap.Block>
+      <DetailsWrap width={width} color={color}>
+         {detailsData.map(({ id, title, icon }, index) => {
+            return (
+               <DetailsWrap.Block key={id}>
+                  <i className={icon}></i>
+                  <Global.H4>
+                     {details[index] > 1 && index !== 3
+                        ? details[index] + title + "s"
+                        : (details[index] || 0) + title}
+                  </Global.H4>
+               </DetailsWrap.Block>
+            );
+         })}
       </DetailsWrap>
    );
 };
