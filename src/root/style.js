@@ -31,6 +31,7 @@ Global.H2 = styled.h2`
    line-height: 48px;
    letter-spacing: -0.02em;
    text-align: center;
+   margin: 0;
 
    color: ${(props) =>
       props.color ? colors(props.color) : "var(--color-white)"};
@@ -42,6 +43,7 @@ Global.H3 = styled.h3`
    line-height: 36px;
 
    text-align: center;
+   margin: 0;
    letter-spacing: -0.02em;
 
    color: ${(props) =>
@@ -54,6 +56,7 @@ Global.H4 = styled.h4`
    line-height: 24px;
 
    text-transform: capitalize;
+   margin: 0;
 
    color: ${(props) =>
       props.color ? colors(props.color) : "var(--color-cyan-blue)"};
