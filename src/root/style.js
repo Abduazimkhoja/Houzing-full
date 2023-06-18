@@ -77,32 +77,32 @@ Global.H5 = styled.h5`
 `;
 
 Global.CircleIcon = styled.button`
-   width: 35px;
-   height: 35px;
+   width: 36px;
+   height: 36px;
 
    display: flex;
    align-items: center;
    justify-content: center;
 
    border-radius: 50%;
+   text-align: center;
 
    background: var(--color-closely-white);
 
    transition: transform 0.3s ease, background 0.3s ease, color .3s ease;
 
    &:hover {
-      transform: scale(1.04);
       background: ${(props) =>
          props.bg === "red" ? "var(--color-red)" : "var(--color-blue)"};
       i::before{
          color: var(--color-white);
       }
    }
-   &:active {
-      transform: scale(1);
-   }
 
    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 12px;
    }
 `;
