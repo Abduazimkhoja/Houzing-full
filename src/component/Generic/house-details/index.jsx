@@ -3,8 +3,9 @@ import { DetailsWrap } from "./style";
 import { Global } from "../../../root/style";
 import { detailsData } from "../../../utils/Details";
 
-export const Details = ({ bed, bath, garage, sqFt, color, width, margin }) => {
-   const details = [bed, bath, garage, sqFt];
+export const Details = ({ houseDetails = {}, color, width, margin }) => {
+   const {beds, bath, garage, sqFt} = houseDetails
+   const details = [beds, bath, garage, sqFt];
 
    return (
       <DetailsWrap width={width} color={color} margin={margin}>

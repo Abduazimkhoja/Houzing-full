@@ -52,6 +52,12 @@ Card.Content = styled.div`
 
    border-right: 1px solid var(--color-white-smoke);
    border-left: 1px solid var(--color-white-smoke);
+
+   .card-line {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
 `;
 
 Card.Footer = styled.div`
