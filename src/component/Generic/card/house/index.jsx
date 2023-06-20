@@ -35,7 +35,7 @@ const HouseCard = ({ data = {} }) => {
             <Global.H5 className="card-line" margin="16px">
                {address}, {city}, {country}, {region}
             </Global.H5>
-            <Details color="gray" houseDetails={houseDetails} />
+            <Details width = "100%" color="gray" houseDetails={houseDetails} />
          </Card.Content>
          <Card.Footer>
             <div>

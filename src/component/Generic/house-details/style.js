@@ -2,15 +2,17 @@ import { styled } from "styled-components";
 import colors from "../color";
 
 export const DetailsWrap = styled.ul`
-   width: ${(props) => props.width || "340px"};
+   max-width: ${(props) => props.width || "340px"};
+   width: 100%;
+
    margin: ${props => props.margin || 0} 0;
 
    display: flex;
    align-items: center;
    justify-content: space-between;
-   gap: 20px;
+   gap: 10px;
 
-   h4,
+   h5,
    i::before {
       color: ${(props) => colors(props.color) || "var(--color-white)"};
    }
