@@ -35,6 +35,7 @@ export const CarouselWrap = styled.section`
 `;
 
 CarouselWrap.Buttons = styled.div`
+display: block;
    max-width: 1440px;
    width: 100%;
    padding: 0 30px;
@@ -51,7 +52,7 @@ CarouselWrap.Button = styled.button`
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   ${(props) =>
+   ${(props) => 
       props.name === "left"
          ? "left: 30px;"
          : "right: 30px; transform: translateY(-50%) rotate(180deg);"}

@@ -8,9 +8,11 @@ Global.FillBg = styled.section`
 `;
 
 Global.Container = styled.div`
-   position: relative;
    max-width: 1240px;
    width: 100%;
+   
+   display: block;
+   position: relative;
 
    margin: 0 auto;
    padding: 0 30px;
@@ -89,12 +91,12 @@ Global.CircleIcon = styled.button`
 
    background: var(--color-closely-white);
 
-   transition: transform 0.3s ease, background 0.3s ease, color .3s ease;
+   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 
    &:hover {
       background: ${(props) =>
          props.bg === "red" ? "var(--color-red)" : "var(--color-blue)"};
-      i::before{
+      i::before {
          color: var(--color-white);
       }
    }
