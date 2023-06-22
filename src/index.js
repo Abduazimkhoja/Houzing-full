@@ -6,6 +6,8 @@ import "./styleVar.css";
 import Root from "./root";
 import "./assets/icons/style.css"
 import 'antd/dist/reset.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

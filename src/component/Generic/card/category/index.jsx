@@ -1,12 +1,11 @@
 import React from "react";
 import { Wrapper } from "./style";
 
-const CategoryCard = ({ data = {}, bg }) => {
-   const {} = data;
+const CategoryCard = ({ name, bg }) => {
    return (
       <Wrapper bg = {bg}>
          <span className="icon icon-house"></span>
-         <h4>text</h4>
+         <h4>{name}</h4>
       </Wrapper>
    );
 };
