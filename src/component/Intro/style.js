@@ -11,7 +11,7 @@ export const IntroBlock = styled.div`
       width: inherit;
       height: inherit;
 
-      filter: brightness(0.35);
+      filter: brightness(0.2);
 
       object-position: center;
       object-fit: cover;
@@ -19,11 +19,13 @@ export const IntroBlock = styled.div`
 `;
 
 IntroBlock.Content = styled.div`
-   width: inherit;
+   width: 600px;
    height: inherit;
 
    position: absolute;
    top: 0;
+   left: 50%;
+   transform: translateX(-50%);
 
    display: flex;
    flex-direction: column;
