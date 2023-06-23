@@ -22,7 +22,8 @@ export const InputWrap = styled.div`
 
    transition: border-color 0.3s ease;
 
-   &:focus-within {
+   &:focus-within,
+   &:hover {
       border-color: var(--color-blue);
    }
 `;

@@ -20,9 +20,10 @@ Filter.Inputs = styled.div`
       align-items: center;
       height: 44px !important;
       border-radius: 1px;
-      border: 1px solid var(--color-white-smoke);
-      &:hover {
-         border: 1px solid var(--color-white-smoke);
+      border: 1px solid var(--color-white-smoke) !important;
+      &:hover,
+      &:focus {
+         border: 1px solid var(--color-blue) !important;
       }
    }
 `;
