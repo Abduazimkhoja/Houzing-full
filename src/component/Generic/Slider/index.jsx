@@ -1,6 +1,8 @@
 import React from "react";
 import { Global } from "../../../root/style";
 import Slider from "react-slick";
+import './style.css'
+
 
 const GenericSlider = ({ children, count = 4 }) => {
    let settings = {

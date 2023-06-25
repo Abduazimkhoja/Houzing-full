@@ -5,7 +5,7 @@ import { Global } from "../../root/style";
 import { useData } from "../../hooks/useData";
 
 const Intro = () => {
-   const [data, setData] = useData("/houses/list");
+   const [data] = useData("/houses/list");
 
    return (
       <Carousel>

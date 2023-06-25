@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Select, Space } from "antd";
+import { Select } from "antd";
 import { Filter } from "./style";
 
 import { FilterData } from "../../../utils/Filter";
@@ -17,7 +17,7 @@ export const SearchFilter = ({ setDropdownStatus }) => {
    const allRef = useRef({});
    // console.log(refPick);
 
-   const [data, setData] = useData("/categories/list");
+   const [data] = useData("/categories/list");
 
    const navigate = useNavigate();
    const query = useSearch();
@@ -70,7 +70,7 @@ export const SearchFilter = ({ setDropdownStatus }) => {
                               style={{ width: 200, height: 44 }}
                               onChange={handleSelectChange}
                               options={[
-                                 { value: "All", label: "All" },
+                                 { value: "All", label: "All Category" },
                                  ...data.map((category) => {
                                     return {
                                        value: category.id,
