@@ -14,6 +14,18 @@ Filter.Block = styled.div`
 Filter.Inputs = styled.div`
    display: flex;
    gap: 20px;
+
+   .ant-select-selector {
+      display: flex;
+      align-items: center;
+      height: 44px !important;
+      border-radius: 1px;
+      border: 1px solid var(--color-white-smoke) !important;
+      &:hover,
+      &:focus {
+         border: 1px solid var(--color-blue) !important;
+      }
+   }
 `;
 
 Filter.Footer = styled.div`

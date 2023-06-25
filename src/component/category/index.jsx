@@ -1,19 +1,22 @@
 import React from "react";
 
-import { Carousel } from "../Generic";
 import CategoryCard from "../Generic/card/category";
 import { useData } from "../../hooks/useData";
-import { Wrapper } from "./style";
-import { Global } from "../../root/style";
 import { GenericSlider } from "../Generic";
+import { useNavigate } from "react-router-dom";
 
 const Category = () => {
-   const [data, setData] = useData("/categories/list", false);
+   const [data] = useData("/categories/list");
+   const navigate = useNavigate();
 
    return (
       <GenericSlider>
          {data.map((value) => (
-            <CategoryCard name={value.name} />
+            <CategoryCard
+               key={value.id}
+               name={value.name}
+               onClick={() => navigate(`/properties/?category_id=${value.id}`)}
+            />
          ))}
       </GenericSlider>
    );

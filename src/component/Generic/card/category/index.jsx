@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrapper } from "./style";
 
-const CategoryCard = ({ name, bg }) => {
+const CategoryCard = ({ name, bg, onClick }) => {
    return (
-      <Wrapper bg = {bg}>
+      <Wrapper onClick = {onClick} bg = {bg}>
          <span className="icon icon-house"></span>
          <h4>{name}</h4>
       </Wrapper>

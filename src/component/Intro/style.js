@@ -19,11 +19,13 @@ export const IntroBlock = styled.div`
 `;
 
 IntroBlock.Content = styled.div`
-   width: inherit;
+   width: 600px;
    height: inherit;
 
    position: absolute;
    top: 0;
+   left: 50%;
+   transform: translateX(-50%);
 
    display: flex;
    flex-direction: column;

@@ -3,20 +3,11 @@ import HouseCard from "../Generic/card/house";
 import { Wrapper } from "./style";
 import { Global } from "../../root/style";
 import { useLocation } from "react-router-dom";
-
+import Slider from "../Slider";
+import { useData } from "../../hooks/useData";
 
 const Properties = () => {
-   const [data, setData] = useState([]);
-   const {search} = useLocation()
-   
-   const { REACT_APP_BASE_URL: url } = process.env;
-   useEffect(() => {
-      fetch(`${url}/houses/list${search}`)
-         .then((res) => res.json())
-         .then((res) => {
-            setData(res?.data || []);
-         });
-   }, [search]);
+   const [data] = useData("/houses/list", true);
 
    return (
       <Global.Container>
@@ -26,6 +17,7 @@ const Properties = () => {
             })}
          </Wrapper>
       </Global.Container>
+         // <Slider />
    );
 };
 export default Properties;

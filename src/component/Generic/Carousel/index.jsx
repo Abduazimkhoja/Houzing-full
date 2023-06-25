@@ -3,7 +3,7 @@ import { Carousel as AntCarousel } from "antd";
 import { CarouselWrap } from "./style";
 import { Global } from "../../../root/style";
 
-const Carousel = ({ children, dots, outside }) => {
+const Carousel = ({ children, dots, outside }) => {   
    const slider = useRef();
    const onChange = (currentSlide) => {
       console.log(currentSlide);
