@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HouseCard from "../Generic/card/house";
 import { Wrapper } from "./style";
 import { Global } from "../../root/style";
-import { useLocation } from "react-router-dom";
-import Slider from "../Slider";
 import { useData } from "../../hooks/useData";
 
 const Properties = () => {
@@ -17,7 +15,6 @@ const Properties = () => {
             })}
          </Wrapper>
       </Global.Container>
-         // <Slider />
    );
 };
 export default Properties;

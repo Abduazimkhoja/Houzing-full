@@ -23,7 +23,7 @@ const Intro = () => {
                      <img
                         className="intro__image"
                         src={attachments[0].imgPath}
-                        alt="House photo"
+                        alt=""
                      />
                      <IntroBlock.Content>
                         <Global.H2 margin="8px">{description}</Global.H2>
