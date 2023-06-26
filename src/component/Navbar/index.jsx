@@ -9,7 +9,7 @@ const Navbar = () => {
    const navigate = useNavigate();
    return (
       <>
-         <Global.FillBg bg="cyanBlue">
+         <Global.FullBg bg="cyanBlue">
             <Global.Container>
                <nav>
                   <Nav.List>
@@ -39,7 +39,7 @@ const Navbar = () => {
                   </Nav.List>
                </nav>
             </Global.Container>
-         </Global.FillBg>
+         </Global.FullBg>
       </>
    );
 };
