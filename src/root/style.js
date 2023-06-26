@@ -3,20 +3,42 @@ import colors from "../component/Generic/color";
 
 export const Global = styled.div``;
 
-Global.FillBg = styled.section`
-   background: ${(props) => colors(props.bg)};
+Global.FullBg = styled.section`
+   background: ${(props) =>
+      (props.url &&
+         `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), center/cover no-repeat 
+		url(${props.url})`) ||
+      colors(props.bg)};
+   padding: ${(props) => props.padding} 0;
+   height: ${(props) => props.height || "auto"};
 `;
 
 Global.Container = styled.div`
    max-width: 1240px;
    width: 100%;
-   
+   height: inherit;
+
    display: block;
    position: relative;
 
    margin: 0 auto;
    padding: 0 30px;
 `;
+
+Global.FlexCenter = styled.div`
+   width: inherit;
+   height: inherit;
+
+   display: flex;
+   align-items: center;
+
+   ${(props) => props.column && "flex-direction: column;"}
+   justify-content: center;
+`;
+
+Global.Limiter = styled.div`
+   width: ${props => props.width || 0};
+`
 
 Global.Logo = styled.i.attrs((props) => ({ className: "icon-logo" }))`
    background: none;
@@ -59,10 +81,12 @@ Global.H4 = styled.h4`
    margin-bottom: ${(props) => props.margin || 0};
 
    font-weight: ${(props) => props.fw || 400};
-   font-size: 16px;
+   font-size: ${(props) => props.fz || "16px"};
    line-height: 24px;
 
    text-transform: capitalize;
+
+   text-align: ${(props) => props.ta};
 
    color: ${(props) =>
       props.color ? colors(props.color) : "var(--color-cyan-blue)"};

@@ -11,7 +11,7 @@ export const Search = () => {
 
    return (
       <>
-         <Global.FillBg bg="white">
+         <Global.FullBg bg="white">
             <Global.Container>
                <SearchWrap>
                   <Input
@@ -39,7 +39,7 @@ export const Search = () => {
                   </Button>
                </SearchWrap>
             </Global.Container>
-         </Global.FillBg>
+         </Global.FullBg>
          <Outlet />
       </>
    );
