@@ -1,7 +1,12 @@
 import { styled } from "styled-components";
 import colors from "../component/Generic/color";
 
-export const Global = styled.div``;
+export const Global = styled.div`
+   height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+`;
 
 Global.FullBg = styled.section`
    background: ${(props) =>
@@ -37,8 +42,8 @@ Global.FlexCenter = styled.div`
 `;
 
 Global.Limiter = styled.div`
-   width: ${props => props.width || 0};
-`
+   width: ${(props) => props.width || 0};
+`;
 
 Global.Logo = styled.i.attrs((props) => ({ className: "icon-logo" }))`
    background: none;
