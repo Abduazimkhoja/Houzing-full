@@ -1,8 +1,7 @@
 import React from "react";
 // import Intro from "../Intro";
-import HouseCard from "../Generic/card/house";
 import Category from "./category";
-import Recommended from "./recomended";
+import Recommended from "./recommended";
 import Why from "./why";
 import Recent from "./recent";
 import Banner from "./banner";

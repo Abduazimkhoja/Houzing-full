@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { SearchWrap } from "./style";
 import { Dropdown } from "antd";
 import { SearchFilter } from "./filter";
+import Foot from "../Footer";
 
 export const Search = () => {
    const [DropdownStatus, setDropdownStatus] = useState(false);
@@ -41,6 +42,7 @@ export const Search = () => {
             </Global.Container>
          </Global.FullBg>
          <Outlet />
+         <Foot/>
       </>
    );
 };
