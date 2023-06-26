@@ -3,41 +3,41 @@ import { Global } from "../../../root/style";
 import Slider from "react-slick";
 import "./style.js";
 
-const arrowStyle = {
-   display: "block",
-   minWidth: "45px",
-   minHeight: "45px",
-   borderRadius: "50%",
-   border: "1px solid var(--color-white-smoke, #e6e9ec);",
-};
+// const arrowStyle = {
+//    display: "block",
+//    minWidth: "45px",
+//    minHeight: "45px",
+//    borderRadius: "50%",
+//    border: "1px solid var(--color-white-smoke);",
+// };
 
-const SampleNextArrow = (props) => {
-   const { className, style, onClick } = props;
-   return (
-      <div
-         className={className}
-         style={{
-            ...style,
-            ...arrowStyle,
-         }}
-         onClick={onClick}
-      />
-   );
-};
+// const SampleNextArrow = (props) => {
+//    const { className, style, onClick } = props;
+//    return (
+//       <div
+//          className={className}
+//          style={{
+//             ...style,
+//             ...arrowStyle,
+//          }}
+//          onClick={onClick}
+//       />
+//    );
+// };
 
-const SamplePrevArrow = (props) => {
-   const { className, style, onClick } = props;
-   return (
-      <div
-         className={className}
-         style={{
-            ...style,
-            ...arrowStyle,
-         }}
-         onClick={onClick}
-      />
-   );
-};
+// const SamplePrevArrow = (props) => {
+//    const { className, style, onClick } = props;
+//    return (
+//       <div
+//          className={className}
+//          style={{
+//             ...style,
+//             ...arrowStyle,
+//          }}
+//          onClick={onClick}
+//       />
+//    );
+// };
 
 const GenericSlider = ({ children, count = 4 }) => {
    let settings = {
@@ -47,8 +47,8 @@ const GenericSlider = ({ children, count = 4 }) => {
       slidesToScroll: count,
       initialSlide: 0,
       dots: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      // nextArrow: <SampleNextArrow />,
+      // prevArrow: <SamplePrevArrow />,
       // responsive:
       //    count === 4
       //       ? [

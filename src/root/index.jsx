@@ -3,10 +3,11 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { navbar } from "../utils/navbar";
 import Navbar from "../component/Navbar";
 import { Search } from "../component/Search";
+import { Global } from "./style";
 
 const Root = () => {
    return (
-      <div>
+      <Global>
          <BrowserRouter>
             <Routes>
                <Route element={<><Navbar /><Search/></>}>
@@ -19,7 +20,7 @@ const Root = () => {
                <Route path="*" element={<h1>404 Not Fond</h1>} />
             </Routes>
          </BrowserRouter>
-      </div>
+      </Global>
    );
 };
 
