@@ -1,12 +1,7 @@
 import { styled } from "styled-components";
 import colors from "../component/Generic/color";
 
-export const Global = styled.div`
-   height: 100vh;
-
-   display: flex;
-   flex-direction: column;
-`;
+export const Global = styled.div``;
 
 Global.FullBg = styled.section`
    background: ${(props) =>
@@ -16,6 +11,15 @@ Global.FullBg = styled.section`
       colors(props.bg)};
    padding: ${(props) => props.padding} 0;
    height: ${(props) => props.height || "auto"};
+
+   ${(props) =>
+      props.footer &&
+      `
+         width: 100%;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+      `}
 `;
 
 Global.Container = styled.div`
@@ -45,7 +49,9 @@ Global.Limiter = styled.div`
    width: ${(props) => props.width || 0};
 `;
 
-Global.Logo = styled.i.attrs((props) => ({ className: "icon-logo" }))`
+Global.Logo = styled.i.attrs((props) => ({
+   className: "icon-logo",
+}))`
    background: none;
 
    font-size: 40px;
