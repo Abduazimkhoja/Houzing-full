@@ -5,19 +5,19 @@ import Recommended from "./recommended";
 import Why from "./why";
 import Recent from "./recent";
 import Banner from "./banner";
-import { Wrapper } from "./style";
+
 const Intro = React.lazy(() => import("../Intro"));
 
 const Home = () => {
    return (
-      <Wrapper>
+      <>
          <Intro />
          <Recommended />
-         <Why/>
+         <Why />
          <Category />
-         <Banner/>
+         <Banner />
          <Recent />
-      </Wrapper>
+      </>
    );
 };
 export default Home;

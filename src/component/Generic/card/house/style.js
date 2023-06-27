@@ -10,6 +10,8 @@ export const Card = styled.div`
 
    background: var(--color-white);
 
+   cursor: pointer;
+
    &:hover {
       box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.06),
          0px 7px 46px 0px rgba(0, 0, 0, 0.06),

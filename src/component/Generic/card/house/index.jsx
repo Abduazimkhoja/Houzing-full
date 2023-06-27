@@ -2,9 +2,11 @@ import React from "react";
 import { Card } from "./style";
 import { Global } from "../../../../root/style";
 import Details from "../../house-details";
+import { useNavigate } from "react-router-dom";
 
 const HouseCard = ({ data = {} }) => {
    const {
+      id,
       address,
       attachments,
       city,
@@ -15,8 +17,10 @@ const HouseCard = ({ data = {} }) => {
       price,
       salePrice,
    } = data;
+
+   const navigate = useNavigate()
    return (
-      <Card>
+      <Card onClick={() => navigate(`/properties/${id}`)}>
          <Card.Head>
             <Card.TopInfo bg="blue" left="true">
                FEATURED
