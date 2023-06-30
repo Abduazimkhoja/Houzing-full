@@ -1,7 +1,17 @@
 import { styled } from "styled-components";
 import colors from "../component/Generic/color";
 
-export const Global = styled.div``;
+export const Main = styled.div`
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+`;
+
+export const Global = styled.div`
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+`;
 
 Global.FullBg = styled.section`
    background: ${(props) =>
