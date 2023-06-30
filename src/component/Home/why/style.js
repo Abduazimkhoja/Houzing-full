@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-
    padding: 48px 0;
 
    background: var(--color-white-lilac);
@@ -30,13 +29,13 @@ Wrapper.Block = styled.div`
       margin-bottom: 4px;
 
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
 
       font-size: 50px;
 
       border-radius: 50%;
-      transition: background .3s ease, color .3s ease;
+      transition: background 0.3s ease, color 0.3s ease;
 
       &:hover {
          background: var(--color-blue);
