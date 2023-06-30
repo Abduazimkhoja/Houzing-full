@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Input } from "../Generic";
-import { Global } from "../../root/style";
+import { Global, Main } from "../../root/style";
 import { Outlet } from "react-router-dom";
 import { SearchWrap } from "./style";
 import { Dropdown } from "antd";
@@ -27,7 +27,9 @@ export const Search = () => {
                         setDropdownStatus(DropdownStatus);
                      }}
                      trigger={["click"]}
-                     dropdownRender={() => <SearchFilter setDropdownStatus={setDropdownStatus} />}
+                     dropdownRender={() => (
+                        <SearchFilter setDropdownStatus={setDropdownStatus} />
+                     )}
                      placement="bottomRight"
                      arrow={{ pointAtCenter: true }}
                   >
@@ -41,10 +43,12 @@ export const Search = () => {
                </SearchWrap>
             </Global.Container>
          </Global.FullBg>
-         <Outlet />
-         <Foot/>
+         <Main>
+            <Outlet />
+         </Main>
+         <Foot />
       </>
    );
 };
 
-export default Search
+export default Search;
