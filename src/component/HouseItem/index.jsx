@@ -1,12 +1,18 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import useRequest from "../../hooks/useRequest";
 
 const HouseItem = () => {
-   const params = useParams()
-   console.log(params);
-  return (
-    <div>HouseItem</div>
-  )
-}
+   const { data, fetchData } = useRequest();
+   const params = useParams();
 
-export default HouseItem
+   useEffect(() => {
+      fetchData({
+         url: `/houses/id/${params.id}`,
+      });
+   }, []);
+
+   return <div></div>;
+};
+
+export default HouseItem;
