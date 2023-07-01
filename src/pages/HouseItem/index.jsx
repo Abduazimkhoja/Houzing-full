@@ -1,10 +1,8 @@
-import React from 'react'
-import HouseItem from '../../component/HouseItem'
+import React from "react";
+import HouseItem from "../../component/HouseItem";
 
 const HouseItemPage = () => {
-  return (
-    <div><HouseItem/></div>
-  )
-}
+   return <HouseItem />;
+};
 
-export default HouseItemPage
+export default HouseItemPage;
