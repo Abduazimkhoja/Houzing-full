@@ -9,9 +9,11 @@ const UploaderUser = (props) => {
       <Wrapper>
          <Global.Flex ai="normal" gap="24px">
             <Global.FlexRowCenter jcsb="true" gap="10px">
-               <Wrapper.Photo />
+               <Wrapper.Photo url={props?.user?.imagePath} />
                <div>
-                  <Global.H4 fw="600">{props?.user?.firstname || "no name"}</Global.H4>
+                  <Global.H4 fw="600">
+                     {props?.user?.firstname || "no name"}
+                  </Global.H4>
                   <Global.H4>
                      {props?.user?.phone || "no phone number"}
                   </Global.H4>

@@ -18,7 +18,7 @@ Wrapper.Photo = styled.div`
 
    border: 2px solid var(--color-white);
 
-   background: center/cover no-repeat url(""), #000;
+   background: center/cover no-repeat url(${(props) => props.url || ""}), #000;
 
    border-radius: 50%;
    box-shadow: 0px 0px 10px 0px rgba(13, 38, 59, 0.2);
