@@ -7,7 +7,8 @@ import { Global } from "../../root/style";
 import { Wrapper } from "./style";
 import UploaderUser from "./user";
 import Description from "./description";
-import ProductDocuments from "./documents";
+import ProductDocuments from "./Documents";
+import ProductLocation from "./location";
 
 const HouseItem = () => {
    const { data, fetchData } = useRequest();
@@ -28,6 +29,8 @@ const HouseItem = () => {
                <ProductInfo data={data} />
                <Description description={data?.data?.description} />
                <ProductDocuments />
+               <Wrapper.Line />
+               <ProductLocation />
                <Wrapper.Line />
             </Wrapper.Content>
             <UploaderUser user={data?.data?.user} />
