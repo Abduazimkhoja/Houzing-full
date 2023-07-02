@@ -5,12 +5,12 @@ export const DetailsWrap = styled.ul`
    max-width: ${(props) => props.width || "340px"};
    width: 100%;
 
-   margin: ${props => props.margin || 0} 0;
+   margin: ${(props) => props.margin || 0} 0;
 
    display: flex;
    align-items: center;
    justify-content: space-between;
-   gap: 10px;
+   gap: ${(props) => props.gap || "10px"};
 
    h5,
    i::before {
@@ -24,7 +24,7 @@ export const DetailsWrap = styled.ul`
 
 DetailsWrap.Block = styled.li`
    display: flex;
-   flex-direction: column;
+   flex-direction: ${(props) => (props.row ? "row" : "column")};
    align-items: center;
    justify-content: center;
    gap: 7px;

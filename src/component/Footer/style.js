@@ -73,6 +73,7 @@ Footer.Bottom = styled.div`
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
+      margin: 0;
 
       color: #ffffff;
    }

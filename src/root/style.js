@@ -55,6 +55,15 @@ Global.FlexCenter = styled.div`
    justify-content: center;
 `;
 
+Global.FlexRowCenter = styled.div`
+   margin-bottom: ${(props) => props.margin || 0};
+
+   display: flex;
+   align-items: center;
+   ${(props) => props.jcsb && "justify-content: space-between;"}
+   gap: ${(props) => props.gap};
+`;
+
 Global.Limiter = styled.div`
    width: ${(props) => props.width || 0};
 `;
@@ -176,4 +185,13 @@ Global.Price = styled.h4`
    letter-spacing: -0.02em;
 
    color: var(--color-cyan-blue);
+`;
+
+Global.Flex = styled.div`
+   display: flex;
+   flex-direction: ${(props) => props.fxd || "column"};
+   align-items: ${(props) => props.ai || "center"};
+   justify-content: ${(props) => props.jc || "center"};
+   gap: ${(props) => props.gap || 0};
+   margin-bottom: ${(props) => props.margin || 0};
 `;

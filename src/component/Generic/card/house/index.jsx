@@ -18,7 +18,7 @@ const HouseCard = ({ data = {} }) => {
       salePrice,
    } = data;
 
-   const navigate = useNavigate()
+   const navigate = useNavigate();
    return (
       <Card onClick={() => navigate(`/properties/${id}`)}>
          <Card.Head>
@@ -27,19 +27,19 @@ const HouseCard = ({ data = {} }) => {
             </Card.TopInfo>
             <Card.TopInfo>FOR SALE</Card.TopInfo>
             <Card.UserPhoto src="https://snipp.ru/demo/560/image.jpeg" />
-            <Card.Image src={attachments&&attachments[0]?.imgPath} alt="house image" />
+            <Card.Image
+               src={attachments && attachments[0]?.imgPath}
+               alt="house image"
+            />
          </Card.Head>
          <Card.Content>
-            <Global.H4 className="card-line"
-               margin="4px"
-               fw="600"
-            >
+            <Global.H4 className="card-line" margin="4px" fw="600">
                {description || "No info"}
             </Global.H4>
             <Global.H5 className="card-line" margin="16px">
                {address}, {city}, {country}, {region}
             </Global.H5>
-            <Details width = "100%" color="gray" houseDetails={houseDetails} />
+            <Details width="100%" color="gray" houseDetails={houseDetails} />
          </Card.Content>
          <Card.Footer>
             <div>
