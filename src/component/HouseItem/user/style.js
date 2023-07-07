@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
+   min-width: 260px;
    width: 280px;
    height: fit-content;
 
@@ -13,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 Wrapper.Photo = styled.div`
-   width: 56px;
+   min-width: 56px;
    height: 56px;
 
    border: 2px solid var(--color-white);

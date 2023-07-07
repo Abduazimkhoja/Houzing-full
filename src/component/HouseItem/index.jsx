@@ -18,8 +18,19 @@ const HouseItem = () => {
       fetchData({
          url: `/houses/id/${params.id}`,
       });
+
+      window.scrollTo(0, 0);
+
       // eslint-disable-next-line react-hooks/exhaustive-deps
-   }, []);
+   }, [params]);
+
+   const location = {
+      address: data?.data?.address,
+      city: data?.data?.city,
+      region: data?.data?.region,
+      zipCode: data?.data?.zipCode,
+      country: data?.data?.country,
+   };
 
    return (
       <Global.Container>
@@ -30,7 +41,7 @@ const HouseItem = () => {
                <Description description={data?.data?.description} />
                <ProductDocuments />
                <Wrapper.Line />
-               <ProductLocation />
+               <ProductLocation data={location} />
                <Wrapper.Line />
             </Wrapper.Content>
             <UploaderUser user={data?.data?.user} />
