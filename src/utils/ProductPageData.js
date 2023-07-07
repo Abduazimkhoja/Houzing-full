@@ -14,8 +14,8 @@ export const property = [
    [
       { id: 1, title: "Property ID:", name: "id" },
       { id: 2, title: "Price:", name: "price" },
-      { id: 3, title: "Property Size:", name: "houseDetails" },
-      { id: 4, title: "Year Built:", name: "houseDetails" },
+      { id: 3, title: "Property Size:", name: "area" },
+      { id: 4, title: "Year Built:", name: "yearBuilt" },
    ],
    [
       { id: 5, title: "Bedrooms:", name: "beds" },
@@ -26,7 +26,7 @@ export const property = [
 
    [
       { id: 9, title: "Property Type:", name: "category" },
-      { id: 10, title: "Property Status:", name: "" },
+      { id: 10, title: "Property Status:", name: "sale" },
    ],
 ];
 
