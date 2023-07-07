@@ -9,6 +9,8 @@ import UploaderUser from "./user";
 import Description from "./description";
 import ProductDocuments from "./Documents";
 import ProductLocation from "./location";
+import ProductProperty from "./property";
+import ProductFeatures from "./features";
 
 const HouseItem = () => {
    const { data, fetchData } = useRequest();
@@ -24,14 +26,6 @@ const HouseItem = () => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [params]);
 
-   const location = {
-      address: data?.data?.address,
-      city: data?.data?.city,
-      region: data?.data?.region,
-      zipCode: data?.data?.zipCode,
-      country: data?.data?.country,
-   };
-
    return (
       <Global.Container>
          <ProductPhoto />
@@ -41,8 +35,11 @@ const HouseItem = () => {
                <Description description={data?.data?.description} />
                <ProductDocuments />
                <Wrapper.Line />
-               <ProductLocation data={location} />
+               <ProductLocation data={data && data} />
                <Wrapper.Line />
+               <ProductProperty data={data && data} />
+               <Wrapper.Line />
+               <ProductFeatures />
             </Wrapper.Content>
             <UploaderUser user={data?.data?.user} />
          </Wrapper>
