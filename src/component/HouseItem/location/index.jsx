@@ -17,7 +17,7 @@ const ProductLocation = ({ data = {} }) => {
 
    return (
       <section>
-         <Global.H4 margin="16px" fz="18px" fw="600">
+         <Global.H4 margin="24px" fz="18px" fw="600">
             Location
          </Global.H4>
          <AlignedBlock data={newData} mapData={location} />

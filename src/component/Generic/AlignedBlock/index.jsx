@@ -16,7 +16,7 @@ const AlignedBlock = ({
          jc="space-between"
       >
          {mapData.map((item, index) => (
-            <Global.Flex key = {index} ai="flex-start" gap={gap}>
+            <Global.Flex key={index} ai="flex-start" gap={gap}>
                {item.map(({ id, title, name }) => {
                   return (
                      <Global.FlexRowCenter key={id} gap="10px">
