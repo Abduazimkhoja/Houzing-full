@@ -60,12 +60,16 @@ export const features = [
 ];
 
 export const commentStats = [
-   { id: 1, stats: "Cleanliness" },
-   { id: 2, stats: "Accuracy" },
-   { id: 3, stats: "Communication" },
-   { id: 4, stats: "Location" },
-   { id: 5, stats: "Check-in" },
-   { id: 6, stats: "Value" },
+   [
+      { id: 1, stats: "Cleanliness" },
+      { id: 3, stats: "Communication" },
+      { id: 5, stats: "Check-in" },
+   ],
+   [
+      { id: 2, stats: "Accuracy" },
+      { id: 4, stats: "Location" },
+      { id: 6, stats: "Value" },
+   ],
 ];
 
 // Progress

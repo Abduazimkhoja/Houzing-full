@@ -11,6 +11,7 @@ import ProductDocuments from "./Documents";
 import ProductLocation from "./location";
 import ProductProperty from "./property";
 import ProductFeatures from "./features";
+import ProductComment from "./comment";
 
 const HouseItem = () => {
    const { data, fetchData } = useRequest();
@@ -41,6 +42,7 @@ const HouseItem = () => {
                <Wrapper.Line />
                <ProductFeatures />
                <Wrapper.Line />
+               <ProductComment />
             </Wrapper.Content>
             <UploaderUser user={data?.data?.user} />
          </Wrapper>
