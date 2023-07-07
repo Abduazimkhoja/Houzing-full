@@ -6,7 +6,7 @@ const ProductFeatures = () => {
    return (
       <section>
          <Global.H4 margin="24px" fz="18px" fw="600">
-            Property Details
+            Features
          </Global.H4>
 
          <Global.Flex gap="20px" ai="flex-start" fxd="row" jc="space-between">

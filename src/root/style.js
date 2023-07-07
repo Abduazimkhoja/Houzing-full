@@ -57,7 +57,7 @@ Global.FlexCenter = styled.div`
 
 Global.FlexRowCenter = styled.div`
    margin-bottom: ${(props) => props.margin || 0};
-   width: ${props => props.width || "auto"};
+   width: ${(props) => props.width || "auto"};
 
    display: flex;
    align-items: center;
@@ -90,8 +90,7 @@ Global.H2 = styled.h2`
 
    text-align: center;
 
-   color: ${(props) =>
-      props.color ? colors(props.color) : "var(--color-white)"};
+   color: ${(props) => colors(props.color || "white")};
 `;
 
 Global.H3 = styled.h3`
@@ -104,8 +103,7 @@ Global.H3 = styled.h3`
    text-align: center;
    letter-spacing: -0.02em;
 
-   color: ${(props) =>
-      props.color ? colors(props.color) : "var(--color-cyan-blue)"};
+   color: ${(props) => colors(props.color || "cyanBlue")};
 `;
 
 Global.H4 = styled.h4`
@@ -119,8 +117,7 @@ Global.H4 = styled.h4`
 
    text-align: ${(props) => props.ta};
 
-   color: ${(props) =>
-      props.color ? colors(props.color) : "var(--color-cyan-blue)"};
+   color: ${(props) => colors(props.color || "cyanBlue")};
 `;
 
 Global.H5 = styled.h5`
@@ -130,7 +127,7 @@ Global.H5 = styled.h5`
    font-size: 14px;
    line-height: 20px;
 
-   color: var(--color-gray);
+   color: ${(props) => colors(props.color || "gray")};
 `;
 
 Global.CircleIcon = styled.button`
@@ -189,10 +186,13 @@ Global.Price = styled.h4`
 `;
 
 Global.Flex = styled.div`
+   width: ${(props) => props.width || "auto"};
+
    display: flex;
    flex-direction: ${(props) => props.fxd || "column"};
    align-items: ${(props) => props.ai || "center"};
    justify-content: ${(props) => props.jc || "center"};
    gap: ${(props) => props.gap || 0};
    margin-bottom: ${(props) => props.margin || 0};
+   ${(props) => props.flex && `flex: ${props.flex};`}
 `;
