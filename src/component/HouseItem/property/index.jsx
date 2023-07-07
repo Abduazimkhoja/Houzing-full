@@ -20,7 +20,7 @@ const ProductProperty = ({ data = {} }) => {
 
    return (
       <section>
-         <Global.H4 margin="16px" fz="18px" fw="600">
+         <Global.H4 margin="24px" fz="18px" fw="600">
             Property Details
          </Global.H4>
 

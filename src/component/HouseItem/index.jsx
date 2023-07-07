@@ -40,6 +40,7 @@ const HouseItem = () => {
                <ProductProperty data={data && data} />
                <Wrapper.Line />
                <ProductFeatures />
+               <Wrapper.Line />
             </Wrapper.Content>
             <UploaderUser user={data?.data?.user} />
          </Wrapper>

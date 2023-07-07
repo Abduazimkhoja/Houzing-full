@@ -31,22 +31,32 @@ export const property = [
 ];
 
 export const features = [
-   { id: 1, icon: "conditioner", subtitle: "Air Conditioning" },
-   { id: 2, icon: "grass", subtitle: "Lawn" },
-   { id: 3, icon: "refrigerator", subtitle: "Refrigerator" },
-   { id: 4, icon: "washer", subtitle: "Washer" },
-   { id: 5, icon: "barbecue", subtitle: "Barbeque" },
-   { id: 6, icon: "laundry", subtitle: "Laundry" },
-   { id: 7, icon: "sauna", subtitle: "Sauna" },
-   { id: 8, icon: "wifi", subtitle: "WiFi" },
-   { id: 9, icon: "dryer", subtitle: "Dryer" },
-   { id: 10, icon: "microwave", subtitle: "Microwave" },
-   { id: 11, icon: "swimmer", subtitle: "Swimming Pool" },
-   { id: 12, icon: "blinds", subtitle: "Window Coverings" },
-   { id: 13, icon: "dumbbell", subtitle: "Gym" },
-   { id: 14, icon: "outdoor-shower", subtitle: "Outdoor Shower" },
-   { id: 15, icon: "coaxial", subtitle: "TV Cable" },
-   { id: 16, icon: "chair", subtitle: "Dining room" },
+   [
+      { id: 1, icon: "conditioner", text: "Air Conditioning" },
+      { id: 5, icon: "barbecue", text: "Barbeque" },
+      { id: 9, icon: "dryer", text: "Dryer" },
+      { id: 13, icon: "dumbbell", text: "Gym" },
+   ],
+   [
+      { id: 2, icon: "grass", text: "Lawn" },
+      { id: 6, icon: "laundry", text: "Laundry" },
+      { id: 10, icon: "microwave", text: "Microwave" },
+      { id: 14, icon: "outdoor-shower", text: "Outdoor Shower" },
+   ],
+
+   [
+      { id: 3, icon: "refrigerator", text: "Refrigerator" },
+      { id: 7, icon: "sauna", text: "Sauna" },
+      { id: 11, icon: "swimmer", text: "Swimming Pool" },
+      { id: 15, icon: "coaxial", text: "TV Cable" },
+   ],
+
+   [
+      { id: 4, icon: "washer", text: "Washer" },
+      { id: 8, icon: "wifi", text: "WiFi" },
+      { id: 12, icon: "blinds", text: "Window Coverings" },
+      { id: 16, icon: "chair", text: "Dining room" },
+   ],
 ];
 
 export const commentStats = [
