@@ -4,7 +4,7 @@ import { commentStats } from "../../../utils/ProductPageData";
 import { Progress } from "./style";
 
 const ProductComment = () => {
-   const randomStats = () => (Math.random() * 5).toFixed(1);
+   const randomStats = () => (1 + Math.random() * 5).toFixed(1);
 
    const staticData = {
       Cleanliness: randomStats(),
@@ -17,7 +17,7 @@ const ProductComment = () => {
 
    const reviewsAverage = Object.values(staticData).reduce(
       (a, b) => Number(a) + Number(b)
-   );
+   ).toFixed(1);
 
    return (
       <section>
@@ -47,7 +47,7 @@ const ProductComment = () => {
                                  max={5}
                                  value={`${staticData[stats]}`}
                               ></Progress>
-                              <Global.H5 color="cyanBlue">
+                              <Global.H5 width = "13px" color="cyanBlue">
                                  {staticData[stats]}
                               </Global.H5>
                            </Global.FlexRowCenter>

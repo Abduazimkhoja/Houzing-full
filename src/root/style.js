@@ -121,6 +121,7 @@ Global.H4 = styled.h4`
 `;
 
 Global.H5 = styled.h5`
+   width: ${props => props.width || "auto"};
    margin-bottom: ${(props) => props.margin || 0};
 
    font-weight: ${(props) => props.fw || 400};
