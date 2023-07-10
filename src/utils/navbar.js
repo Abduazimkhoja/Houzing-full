@@ -1,14 +1,11 @@
 import React from "react";
 import useId from "../hooks/useId";
 import SignInPage from "../pages/Singin";
-
+import FavoritePage from "../pages/Favorite";
 
 const HomePage = React.lazy(() => import("../pages/Home"));
 const PropertiesPage = React.lazy(() => import("../pages/Properties"));
 const HouseItemPage = React.lazy(() => import("../pages/HouseItem"));
-
-// import HomePage from "../pages/Home";
-// import PropertiesPage from "../pages/Properties";
 
 export const navbar = [
    {
@@ -39,6 +36,18 @@ export const navbar = [
       id: useId,
       element: (
          <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+            <FavoritePage />
+         </React.Suspense>
+      ),
+      title: "Favorites",
+      path: "/favorites",
+      private: true,
+      hidden: true,
+   },
+   {
+      id: useId,
+      element: (
+         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
             <HouseItemPage />
          </React.Suspense>
       ),
@@ -49,7 +58,7 @@ export const navbar = [
    },
    {
       id: useId,
-      element: <SignInPage/>,
+      element: <SignInPage />,
       title: "Sign In",
       path: "/signin",
       private: false,

@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 
 Wrapper.Content = styled.div`
    display: flex;
-   align-items: center;
+   align-items: start;
    justify-content: space-between;
    gap: 20px;
 `;
@@ -29,7 +29,7 @@ Wrapper.Block = styled.div`
       margin-bottom: 4px;
 
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
 
       font-size: 50px;
