@@ -14,7 +14,7 @@ const Why = () => {
             <Wrapper.Content>
                {whyData.map(({ id, icon, title, subtitle }) => (
                   <Wrapper.Block key={id}>
-                     <span className={`icon-${icon} icon`}></span>
+                     <i className={`icon-${icon} icon`}></i>
                      <Global.H4 margin = "8px" fz = "18px" ta="center" fw={600}>
                         {title}
                      </Global.H4>

@@ -3,7 +3,7 @@ import { Nav } from "./style";
 import { navbar } from "../../utils/navbar";
 import { Global } from "../../root/style";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../Generic";
+import Login from "./login";
 
 const Navbar = () => {
    const navigate = useNavigate();
@@ -28,13 +28,7 @@ const Navbar = () => {
                         })}
                      </Nav.Item>
                      <Nav.Item>
-                        <Button
-                        width="120px"
-                           type="white"
-                           onClick={() => navigate("/signin")}
-                        >
-                           login
-                        </Button>
+                        <Login />
                      </Nav.Item>
                   </Nav.List>
                </nav>
