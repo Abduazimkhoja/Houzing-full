@@ -121,7 +121,7 @@ Global.H4 = styled.h4`
 `;
 
 Global.H5 = styled.h5`
-   width: ${props => props.width || "auto"};
+   width: ${(props) => props.width || "auto"};
    margin-bottom: ${(props) => props.margin || 0};
 
    font-weight: ${(props) => props.fw || 400};
@@ -146,11 +146,18 @@ Global.CircleIcon = styled.button`
 
    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 
-   &:hover {
+   &:hover,
+   &.active {
       background: ${(props) =>
          props.bg === "red" ? "var(--color-red)" : "var(--color-blue)"};
       i::before {
          color: var(--color-white);
+      }
+   }
+   &.active:hover {
+      background: var(--color-closely-white);
+      i::before {
+         color: var(--color-gray);
       }
    }
 
@@ -162,7 +169,7 @@ Global.CircleIcon = styled.button`
    }
 `;
 
-Global.OldPrice = styled.h5`
+Global.OldPrice = styled.del`
    margin-bottom: ${(props) => props.margin || 0};
 
    font-weight: 400;
