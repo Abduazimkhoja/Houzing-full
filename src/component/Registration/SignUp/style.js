@@ -13,7 +13,6 @@ export const Wrapper = styled.section`
 Wrapper.Content = styled.div`
    max-width: 580px;
    width: 100%;
-   height: 376px;
 
    display: flex;
    flex-direction: column;

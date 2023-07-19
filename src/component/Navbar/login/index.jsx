@@ -56,7 +56,7 @@ const Login = () => {
             <Button
                width="120px"
                type="white"
-               onClick={() => navigate("/signin")}
+               onClick={() => navigate("/registration")}
             >
                login
             </Button>

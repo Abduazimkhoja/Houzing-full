@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import useRequest from "../../hooks/useRequest";
+import useRequest from "../../../hooks/useRequest";
 import { message } from "antd";
-import { Global } from "../../root/style";
+import { Global } from "../../../root/style";
 import { FormInput, Wrapper } from "./style";
-import { Button } from "../Generic";
+import { Button } from "../../Generic";
 import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
@@ -50,7 +50,7 @@ const SignIn = () => {
                   ref={(el) => {
                      body.current.email = el?.input?.value;
                   }}
-                  type="email"
+                  type="text"
                   placeholder="Login"
                />
                <FormInput.Password
