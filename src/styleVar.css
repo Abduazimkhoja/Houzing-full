@@ -10,3 +10,9 @@
    --color-white-smoke: #e6e9ec;
    --color-closely-white: #f6f8f9;
 }
+
+.card-line {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
