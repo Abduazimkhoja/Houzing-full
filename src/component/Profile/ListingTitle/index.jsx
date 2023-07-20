@@ -3,7 +3,6 @@ import { CardRow } from "./style";
 
 const ListingTitle = ({ data }) => {
    const {
-      id,
       address,
       city,
       country,
