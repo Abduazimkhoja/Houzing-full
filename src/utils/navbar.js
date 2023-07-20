@@ -1,11 +1,13 @@
 import React from "react";
 import useId from "../hooks/useId";
-import SignInPage from "../pages/Singin";
 import FavoritePage from "../pages/Favorite";
+import RegistrationPage from "../pages/Registration";
+import AddHousePage from "../pages/Addhouse";
 
 const HomePage = React.lazy(() => import("../pages/Home"));
 const PropertiesPage = React.lazy(() => import("../pages/Properties"));
 const HouseItemPage = React.lazy(() => import("../pages/HouseItem"));
+const MyProfilePage = React.lazy(() => import("../pages/Progfile"));
 
 export const navbar = [
    {
@@ -58,17 +60,33 @@ export const navbar = [
    },
    {
       id: useId,
-      element: <SignInPage />,
-      title: "Sign In",
-      path: "/signin",
-      private: false,
+      element: (
+         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+            <AddHousePage />
+         </React.Suspense>
+      ),
+      title: "Add House",
+      path: "/myproperties/createhouse",
+      private: true,
       hidden: true,
    },
    {
       id: useId,
-      element: <h1>Sign Up</h1>,
-      title: "Sign Up",
-      path: "/signup",
+      element: (
+         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+            <MyProfilePage />
+         </React.Suspense>
+      ),
+      title: "My Profile",
+      path: "/myproperties",
+      private: true,
+      hidden: true,
+   },
+   {
+      id: useId,
+      element: <RegistrationPage />,
+      title: "Registration",
+      path: "/registration",
       private: false,
       hidden: true,
    },

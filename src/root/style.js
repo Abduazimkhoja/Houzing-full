@@ -44,6 +44,13 @@ Global.Container = styled.div`
    padding: 0 30px;
 `;
 
+Global.Block = styled.div`
+   max-width: ${(props) => props.width || "auto"};
+   max-height: ${(props) => props.height || "auto"};
+   width: 100%;
+   height: 100%;
+`;
+
 Global.FlexCenter = styled.div`
    width: inherit;
    height: inherit;
