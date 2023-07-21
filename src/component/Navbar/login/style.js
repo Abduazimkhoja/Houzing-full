@@ -10,6 +10,7 @@ export const DropdownRender = styled.div`
 
    border-radius: 4px;
    background: var(--color-white);
+   border: 1px solid var(--color-white-smoke);
 
    button {
       background: none;

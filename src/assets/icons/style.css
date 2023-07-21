@@ -1,213 +1,220 @@
 @font-face {
-   font-family: "icomoon";
-   src: url("fonts/icomoon.eot?70ipi1");
-   src: url("fonts/icomoon.eot?70ipi1#iefix") format("embedded-opentype"),
-      url("fonts/icomoon.ttf?70ipi1") format("truetype"),
-      url("fonts/icomoon.woff?70ipi1") format("woff");
-   font-weight: normal;
-   font-style: normal;
-   font-display: block;
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?p4lvc0');
+  src:  url('fonts/icomoon.eot?p4lvc0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?p4lvc0') format('truetype'),
+    url('fonts/icomoon.woff?p4lvc0') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-   /* use !important to prevent issues with browser extensions that change fonts */
-   font-family: "icomoon" !important;
-   speak: never;
-   font-style: normal;
-   font-weight: normal;
-   font-variant: normal;
-   text-transform: none;
-   line-height: 1;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-   /* Better Font Rendering =========== */
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-trash:before {
+  content: "\e92f";
+  color: #696969;
+}
+.icon-edit:before {
+  content: "\e930";
+  color: #696969;
+}
 .icon-login:before {
-   content: "\e92e";
-   color: #fff;
+  content: "\e92e";
+  color: #fff;
 }
 .icon-calendar:before {
-   content: "\e92d";
-   color: #fff;
+  content: "\e92d";
+  color: #fff;
 }
 .icon-dryer:before {
-   content: "\e900";
-   color: #696969;
+  content: "\e900";
+  color: #696969;
 }
 .icon-dumbbell:before {
-   content: "\e902";
-   color: #696969;
+  content: "\e902";
+  color: #696969;
 }
 .icon-grass:before {
-   content: "\e904";
-   color: #696969;
+  content: "\e904";
+  color: #696969;
 }
 .icon-laundry:before {
-   content: "\e907";
-   color: #696969;
+  content: "\e907";
+  color: #696969;
 }
 .icon-microwave:before {
-   content: "\e90a";
-   color: #696969;
+  content: "\e90a";
+  color: #696969;
 }
 .icon-outdoor-shower:before {
-   content: "\e90b";
-   color: #696969;
+  content: "\e90b";
+  color: #696969;
 }
 .icon-refrigerator:before {
-   content: "\e90f";
-   color: #696969;
+  content: "\e90f";
+  color: #696969;
 }
 .icon-sauna:before {
-   content: "\e911";
-   color: #696969;
+  content: "\e911";
+  color: #696969;
 }
 .icon-share:before {
-   content: "\e913";
-   color: #696969;
+  content: "\e913";
+  color: #696969;
 }
 .icon-star:before {
-   content: "\e914";
-   color: #cab877;
+  content: "\e914";
+  color: #cab877;
 }
 .icon-swimmer:before {
-   content: "\e915";
-   color: #696969;
+  content: "\e915";
+  color: #696969;
 }
 .icon-washer:before {
-   content: "\e91a";
-   color: #696969;
+  content: "\e91a";
+  color: #696969;
 }
 .icon-wifi:before {
-   content: "\e91b";
-   color: #696969;
+  content: "\e91b";
+  color: #696969;
 }
 .icon-barbecue:before {
-   content: "\e91c";
-   color: #696969;
+  content: "\e91c";
+  color: #696969;
 }
 .icon-blinds:before {
-   content: "\e91d";
-   color: #696969;
+  content: "\e91d";
+  color: #696969;
 }
 .icon-chair:before {
-   content: "\e91e";
-   color: #696969;
+  content: "\e91e";
+  color: #696969;
 }
 .icon-coaxial:before {
-   content: "\e91f";
-   color: #696969;
+  content: "\e91f";
+  color: #696969;
 }
 .icon-conditioner:before {
-   content: "\e920";
-   color: #696969;
+  content: "\e920";
+  color: #696969;
 }
 .icon-download:before {
-   content: "\e921";
-   color: #696969;
+  content: "\e921";
+  color: #696969;
 }
 .icon-arrow:before {
-   content: "\e90c";
+  content: "\e90c";
 }
 .icon-loupe:before {
-   content: "\e901";
-   color: #fff;
+  content: "\e901";
+  color: #fff;
 }
 .icon-love:before {
-   content: "\e903";
-   color: #696969;
+  content: "\e903";
+  color: #696969;
 }
 .icon-maps:before {
-   content: "\e905";
-   color: #0061df;
+  content: "\e905";
+  color: #0061df;
 }
 .icon-email:before {
-   content: "\e906";
+  content: "\e906";
 }
 .icon-office:before {
-   content: "\e908";
-   color: #fff;
+  content: "\e908";
+  color: #fff;
 }
 .icon-resize:before {
-   content: "\e909";
-   color: #696969;
+  content: "\e909";
+  color: #696969;
 }
 .icon-ruler:before {
-   content: "\e90d";
-   color: #fff;
+  content: "\e90d";
+  color: #fff;
 }
 .icon-search:before {
-   content: "\e90e";
-   color: #0061df;
+  content: "\e90e";
+  color: #0061df;
 }
 .icon-twitter:before {
-   content: "\e910";
-   color: #fff;
+  content: "\e910";
+  color: #fff;
 }
 .icon-phone:before {
-   content: "\e912";
-   color: #fff;
+  content: "\e912";
+  color: #fff;
 }
 .icon-villa:before {
-   content: "\e916";
-   color: #fff;
+  content: "\e916";
+  color: #fff;
 }
 .icon-apartment:before {
-   content: "\e917";
-   color: #fff;
+  content: "\e917";
+  color: #fff;
 }
 .icon-bath:before {
-   content: "\e918";
-   color: #fff;
+  content: "\e918";
+  color: #fff;
 }
 .icon-bed:before {
-   content: "\e919";
-   color: #fff;
+  content: "\e919";
+  color: #fff;
 }
 .icon-calculator:before {
-   content: "\e922";
-   color: #0061df;
+  content: "\e922";
+  color: #0061df;
 }
 .icon-car:before {
-   content: "\e923";
-   color: #fff;
+  content: "\e923";
+  color: #fff;
 }
 .icon-discord:before {
-   content: "\e924";
-   color: #0061df;
+  content: "\e924";
+  color: #0061df;
 }
 .icon-facebook:before {
-   content: "\e925";
-   color: #fff;
+  content: "\e925";
+  color: #fff;
 }
 .icon-filter:before {
-   content: "\e926";
-   color: #0061df;
+  content: "\e926";
+  color: #0061df;
 }
 .icon-home:before {
-   content: "\e927";
-   color: #0061df;
+  content: "\e927";
+  color: #0061df;
 }
 .icon-house:before {
-   content: "\e928";
-   color: #fff;
+  content: "\e928";
+  color: #fff;
 }
 .icon-in:before {
-   content: "\e929";
-   color: #fff;
+  content: "\e929";
+  color: #fff;
 }
 .icon-instagram:before {
-   content: "\e92a";
-   color: #fff;
+  content: "\e92a";
+  color: #fff;
 }
 .icon-location:before {
-   content: "\e92b";
-   color: #fff;
+  content: "\e92b";
+  color: #fff;
 }
 .icon-logo:before {
-   content: "\e92c";
-   color: #fff;
+  content: "\e92c";
+  color: #fff;
 }
