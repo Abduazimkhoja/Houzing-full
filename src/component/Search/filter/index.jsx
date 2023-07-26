@@ -13,7 +13,7 @@ import usedReplace from "../../../hooks/useReplace";
 import useSearch from "../../../hooks/useSearch";
 
 export const SearchFilter = ({ setDropdownStatus }) => {
-   // let [refPick, serRefPick] = useState({});
+   // let [refPick, setRefPick] = useState({});
    const allRef = useRef({});
    // console.log(refPick);
 
@@ -48,7 +48,7 @@ export const SearchFilter = ({ setDropdownStatus }) => {
                            <Input
                               key={id}
                               // onClick={() =>
-                              //    serRefPick(
+                              //    setRefPick(
                               //       allRef.current[refInput].children[0].value
                               //    )
                               // }

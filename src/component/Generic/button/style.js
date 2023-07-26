@@ -1,9 +1,12 @@
 import { css, styled } from "styled-components";
 import colors from "../color";
 
-const colorType = (props) => {
+const colorType = ({type}) => {
    return {
       entirelyBlue: css`
+         background: ${colors("blue")};
+      `,
+      submit: css`
          background: ${colors("blue")};
       `,
       cyanBlue: css`
@@ -21,7 +24,7 @@ const colorType = (props) => {
          color: ${colors("cyanBlue")};
          border: 1px solid ${colors("whiteSmoke")};
       `,
-   }[props.type || "entirelyBlue"];
+   }[type || "entirelyBlue"];
 };
 
 const DefaultStyle = css`

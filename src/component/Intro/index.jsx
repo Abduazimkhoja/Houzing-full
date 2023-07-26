@@ -22,7 +22,7 @@ const Intro = () => {
                   <IntroBlock key={id}>
                      <img
                         className="intro__image"
-                        src={attachments[0].imgPath}
+                        src={attachments[0]?.imgPath}
                         alt=""
                      />
                      <IntroBlock.Content>

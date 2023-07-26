@@ -13,6 +13,10 @@ export const Global = styled.div`
    flex-direction: column;
 `;
 
+Global.Wrapper = styled.main`
+   margin: ${props => props.margin || "0"};
+`
+
 Global.FullBg = styled.section`
    background: ${(props) =>
       (props.url &&
@@ -70,6 +74,7 @@ Global.FlexRowCenter = styled.div`
    align-items: center;
    ${(props) => props.jcsb && "justify-content: space-between;"}
    gap: ${(props) => props.gap};
+   flex-wrap: ${(props) => !props.fw && "wrap"};
 `;
 
 Global.Limiter = styled.div`
@@ -107,7 +112,7 @@ Global.H3 = styled.h3`
    font-size: 28px;
    line-height: 36px;
 
-   text-align: center;
+   text-align: ${(props) => props.ta || "center"};
    letter-spacing: -0.02em;
 
    color: ${(props) => colors(props.color || "cyanBlue")};
@@ -210,4 +215,5 @@ Global.Flex = styled.div`
    gap: ${(props) => props.gap || 0};
    margin-bottom: ${(props) => props.margin || 0};
    ${(props) => props.flex && `flex: ${props.flex};`}
+   flex-wrap: ${(props) => props.fw}
 `;

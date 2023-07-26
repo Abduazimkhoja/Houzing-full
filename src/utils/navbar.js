@@ -7,7 +7,7 @@ import AddHousePage from "../pages/Addhouse";
 const HomePage = React.lazy(() => import("../pages/Home"));
 const PropertiesPage = React.lazy(() => import("../pages/Properties"));
 const HouseItemPage = React.lazy(() => import("../pages/HouseItem"));
-const MyProfilePage = React.lazy(() => import("../pages/Progfile"));
+const MyPropertiesPage = React.lazy(() => import("../pages/MyProperties"));
 
 export const navbar = [
    {
@@ -74,7 +74,7 @@ export const navbar = [
       id: useId,
       element: (
          <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
-            <MyProfilePage />
+            <MyPropertiesPage />
          </React.Suspense>
       ),
       title: "My Profile",
