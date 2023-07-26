@@ -20,20 +20,22 @@ const SignUp = () => {
       });
 
       if (!data?.success) {
-         (() => {
-            message.open({
-               type: "success",
-               content: "Подтвердите аккаунт",
-            });
-         })("success");
+         // (() => {
+         //    message.open({
+         //       type: "success",
+         //       content: "Подтвердите аккаунт",
+         //    });
+         // })("success");
+         message.success("Success")
          navigate("/registration");
       } else {
-         (() => {
-            message.open({
-               type: "error",
-               content: "invalid username or password",
-            });
-         })("error");
+         // (() => {
+         //    message.open({
+         //       type: "error",
+         //       content: "invalid username or password",
+         //    });
+         // })("error");
+         message.error("invalid username or password")
       }
    };
 

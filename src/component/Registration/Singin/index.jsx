@@ -22,20 +22,22 @@ const SignIn = () => {
       if (data?.authenticationToken) {
          localStorage.setItem("token", `${data?.authenticationToken}`);
 
-         (() => {
-            message.open({
-               type: "success",
-               content: "Successfully",
-            });
-         })("success");
+         // (() => {
+         //    message.open({
+         //       type: "success",
+         //       content: "Successfully",
+         //    });
+         // })("success");
+         message.success("Success");
          navigate("/home");
       } else {
-         (() => {
-            message.open({
-               type: "error",
-               content: "invalid username or password",
-            });
-         })("error");
+         // (() => {
+         //    message.open({
+         //       type: "error",
+         //       content: "invalid username or password",
+         //    });
+         // })("error");
+         message.error("invalid username or password");
       }
    };
 
