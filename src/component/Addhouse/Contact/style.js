@@ -26,6 +26,7 @@ export const Select = styled.select`
    height: ${(props) => props.height || "44px"};
 
    padding: 0 8px;
+	cursor: pointer;
 
    ${inputStyle}
 `;
@@ -33,7 +34,11 @@ export const Select = styled.select`
 export const Textarea = styled(AntTextarea)`
    ${inputStyle}
    max-height: 250px;
+	padding: 10px 8px;
    &:focus {
       box-shadow: none;
    }
+	&::placeholder {
+		opacity: .4;
+	}
 `;

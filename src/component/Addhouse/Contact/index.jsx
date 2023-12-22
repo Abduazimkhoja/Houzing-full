@@ -3,8 +3,12 @@ import { Select, Textarea } from "./style";
 import { Global } from "../../../root/style";
 import { Input } from "../../Generic";
 
-const Contact = ({ change, formikValue }) => {
+const Contact = (formik) => {
+   const { name, categoryId, description, category } = formik.values;
    const [data] = useData("/categories/list");
+   const defaultCategory = [...data].find(
+      (item) => item.name === category?.name
+   );
 
    return (
       <Global.Flex gap="20px">
@@ -13,23 +17,26 @@ const Contact = ({ change, formikValue }) => {
                width="100%"
                type="text"
                name="name"
-               value={formikValue}
-               onChange={change}
+               value={name}
+               onChange={formik.handleChange}
                placeholder="Property title*"
             />
 
-            <Select name="category" onChange={change}>
+            <Select
+               name="categoryId"
+               onChange={formik.handleChange}
+               value={categoryId || defaultCategory?.id}
+            >
                {data.map(({ id, name }) => (
-                  <option key={id} value={id}>
-                     {name}
-                  </option>
+                  <option key={+id} label={name} value={+id}></option>
                ))}
             </Select>
          </Global.FlexRowCenter>
 
          <Textarea
             name="description"
-            onChange={change}
+            onChange={formik.handleChange}
+            value={description}
             placeholder="Description*"
             cols="10"
             rows="6"
