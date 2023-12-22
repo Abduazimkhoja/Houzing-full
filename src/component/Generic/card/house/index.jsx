@@ -1,13 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Card } from "./style";
 import { Global } from "../../../../root/style";
 import Details from "../../house-details";
 import { useNavigate } from "react-router-dom";
 import { PropertiesContext } from "../../../../context/Properties";
 
-const HouseCard = ({ data = {} }) => {
-   const [{refetch}] = useContext(PropertiesContext)
+const HouseCard = ({ data = {}, favoriteList = [] }) => {
+   const [{ refetch }] = useContext(PropertiesContext);
 
+   const [favorite, setFavorite] = useState(data.favorite || false);
+
+   useEffect(() => {
+      if (favoriteList.length) {
+         if (favoriteList.some(({ id }) => id === data.id)) setFavorite(true);
+         else setFavorite(false);
+      }
+   }, [data.id, favoriteList]);
 
    const {
       id,
@@ -20,23 +28,24 @@ const HouseCard = ({ data = {} }) => {
       houseDetails,
       price,
       salePrice,
-      favorite = false,
    } = data;
 
-   
    const navigate = useNavigate();
    const { REACT_APP_BASE_URL: url } = process.env;
 
    const favoriteChange = (event) => {
       event?.stopPropagation();
+      setFavorite(!favorite);
       fetch(`${url}/houses/addFavourite/${id}?favourite=${!favorite}`, {
          method: "PUT",
          headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
          },
-      }).then(res => res.json()).then(res => {
-         refetch && refetch()
       })
+         .then((res) => res.json())
+         .then(() => {
+            refetch && refetch();
+         });
    };
 
    return (
@@ -68,7 +77,11 @@ const HouseCard = ({ data = {} }) => {
             </div>
             <div className="card__buttons">
                <i className="card__resize icon-resize"></i>
-               <Global.CircleIcon className={favorite && "active"} bg="red" onClick={favoriteChange}>
+               <Global.CircleIcon
+                  className={favorite && "active"}
+                  bg="red"
+                  onClick={favoriteChange}
+               >
                   <i className="icon-love"></i>
                </Global.CircleIcon>
             </div>
