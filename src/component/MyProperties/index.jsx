@@ -1,5 +1,4 @@
 import { Table, message } from "antd";
-import { useData } from "../../hooks/useData";
 import ListingTitle from "./ListingTitle";
 import { Global } from "../../root/style";
 import { Button } from "../Generic";
@@ -17,8 +16,7 @@ const MyProperties = () => {
    let { data, refetch } = useQuery([], () => {
       return fetchData({ url: `/houses/me`, authorize: true });
    });
-   // Для каждого обьекта добавил элемент key
-   data = data?.data
+   data = data?.data // Для каждого обьекта добавил элемент key
       ? data?.data.map((houseData) => ({ ...houseData, key: houseData.id }))
       : data?.data;
 
@@ -30,7 +28,7 @@ const MyProperties = () => {
       }).then((res) => {
          if (res?.success) {
             refetch();
-            message.success("Success deleted!")
+            message.success("Success deleted!");
          }
       });
    };
@@ -59,7 +57,18 @@ const MyProperties = () => {
       {
          title: "Action",
          render: ({ id }) => (
-            <i className="icon-trash" onClick={() => onDelete(id)}></i>
+            <Global.FlexRowCenter gap="20px">
+               <Global.CircleIcon
+                  onClick={() =>
+                     navigate(`/myproperties/createhouse/?id=${id}`)
+                  }
+               >
+                  <i className="icon-default icon-edit"></i>
+               </Global.CircleIcon>
+               <Global.CircleIcon bg="red" onClick={() => onDelete(id)}>
+                  <i className="icon-default icon-trash"></i>
+               </Global.CircleIcon>
+            </Global.FlexRowCenter>
          ),
          key: "action",
       },

@@ -9,13 +9,12 @@ export const Card = styled.div`
    overflow: hidden;
 
    background: var(--color-white);
+	transition: transform .6s ease;
 
    cursor: pointer;
 
    &:hover {
-      box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.06),
-         0px 7px 46px 0px rgba(0, 0, 0, 0.06),
-         0px 20px 38px 0px rgba(0, 0, 0, 0.06);
+      transform: scale(1.02);
    }
 `;
 

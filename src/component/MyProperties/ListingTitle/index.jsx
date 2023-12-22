@@ -31,7 +31,11 @@ const ListingTitle = ({ data }) => {
                {address}, {city}, {country}, {region}
             </Global.H5>
             <div>
-               <Global.OldPrice>${salePrice || 0}/mo</Global.OldPrice>
+               {salePrice ? (
+                  <Global.OldPrice>${salePrice}/mo</Global.OldPrice>
+               ) : (
+                  ""
+               )}
                <Global.Price>${price || 0}/mo</Global.Price>
             </div>
          </Global.Block>

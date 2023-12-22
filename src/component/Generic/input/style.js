@@ -40,5 +40,7 @@ InputWrap.Input = styled.input`
    &::placeholder {
       font-size: 14px;
       color: var(--color-cyan-blue);
+		opacity: .3;
    }
 `;
+

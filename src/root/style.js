@@ -14,8 +14,8 @@ export const Global = styled.div`
 `;
 
 Global.Wrapper = styled.main`
-   margin: ${props => props.margin || "0"};
-`
+   margin: ${(props) => props.margin || "0"};
+`;
 
 Global.FullBg = styled.section`
    background: ${(props) =>
@@ -25,7 +25,7 @@ Global.FullBg = styled.section`
       colors(props.bg)};
    padding: ${(props) => props.padding} 0;
    height: ${(props) => props.height || "auto"};
-
+   margin-top: ${(props) => props.mt || 0};
    ${(props) =>
       props.footer &&
       `
@@ -33,7 +33,7 @@ Global.FullBg = styled.section`
          position: absolute;
          left: 0;
          bottom: 0;
-      `}
+      `};
 `;
 
 Global.Container = styled.div`
@@ -107,6 +107,7 @@ Global.H2 = styled.h2`
 
 Global.H3 = styled.h3`
    margin-bottom: ${(props) => props.margin || 0};
+   margin-top: ${(props) => props.mt || 0};
 
    font-weight: 600;
    font-size: 28px;

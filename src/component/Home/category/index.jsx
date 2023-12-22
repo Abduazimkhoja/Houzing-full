@@ -6,8 +6,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import CategoryCard from "../../Generic/card/category";
 import { useData } from "../../../hooks/useData";
-import { GenericSlider } from "../../Generic";
 import { Wrapper } from "./style";
+import Slider from "../../Slider";
 import { Global } from "../../../root/style";
 
 const Category = () => {
@@ -20,17 +20,20 @@ const Category = () => {
          <Global.H4 ta="center" margin="32px">
             Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
          </Global.H4>
-         <GenericSlider>
+
+         <Slider dataLength={data.length}>
             {data.map((value) => (
-               <CategoryCard
-                  key={value.id}
-                  name={value.name}
-                  onClick={() =>
-                     navigate(`/properties/?category_id=${value.id}`)
-                  }
-               />
+               <li className="slide__item">
+                  <CategoryCard
+                     key={value.id}
+                     name={value.name}
+                     onClick={() =>
+                        navigate(`/properties/?category_id=${value.id}`)
+                     }
+                  />
+               </li>
             ))}
-         </GenericSlider>
+         </Slider>
       </Wrapper>
    );
 };

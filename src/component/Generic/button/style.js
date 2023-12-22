@@ -1,12 +1,9 @@
 import { css, styled } from "styled-components";
 import colors from "../color";
 
-const colorType = ({type}) => {
-   return {
+const colorType = ({ type }) => {
+   const buttonType = {
       entirelyBlue: css`
-         background: ${colors("blue")};
-      `,
-      submit: css`
          background: ${colors("blue")};
       `,
       cyanBlue: css`
@@ -24,7 +21,8 @@ const colorType = ({type}) => {
          color: ${colors("cyanBlue")};
          border: 1px solid ${colors("whiteSmoke")};
       `,
-   }[type || "entirelyBlue"];
+   };
+   return buttonType[type in buttonType ? type : "entirelyBlue"];
 };
 
 const DefaultStyle = css`
@@ -45,10 +43,9 @@ const DefaultStyle = css`
    border-radius: 2px;
 
    color: var(--color-white);
-   background: ${props => props.bg || "none"};
+   background: ${(props) => props.bg || "none"};
 
    transition: transform 0.2s ease, border-width 0.2s ease;
-   
 
    &:hover {
       transform: scale(1.02);
@@ -65,4 +62,4 @@ export const Button = styled.button`
    ${colorType}
 `;
 
-export default Button
+export default Button;

@@ -9,7 +9,7 @@ const ProductProperty = ({ data = {} }) => {
    const newData = {
       id: `HZ${id}`,
       price: `$${price}`,
-      category: category || "not known",
+      category: category.name || "not known",
       area: `${houseDetails?.area} Sq Ft`,
       yearBuilt: houseDetails?.yearBuilt,
       beds: houseDetails?.beds,

@@ -10,14 +10,7 @@ const Intro = () => {
    return (
       <Carousel>
          {data.map(
-            ({
-               id,
-               description,
-               houseDetails,
-               price,
-               address,
-               attachments,
-            }) => {
+            ({ id, name, houseDetails, price, address, attachments }) => {
                return (
                   <IntroBlock key={id}>
                      <img
@@ -26,7 +19,7 @@ const Intro = () => {
                         alt=""
                      />
                      <IntroBlock.Content>
-                        <Global.H2 margin="8px">{description}</Global.H2>
+                        <Global.H2 margin="8px">{name}</Global.H2>
                         <Global.H4 color="white">{address}</Global.H4>
                         <Details margin="24px" houseDetails={houseDetails} />
                         <Global.H3 margin="48px" color="white">

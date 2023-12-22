@@ -10,27 +10,20 @@ export const useData = (shiftUrl = "", needSearch = false) => {
    const searchStatus = needSearch ? search : "";
    const fullUrl = `${url}${shiftUrl}${searchStatus}`;
 
-   useEffect(() => {
-      (async () => {
-         const response = await fetch(fullUrl, {
-            headers: {
-               Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
-         });
-         const responseJson = await response.json();
-         setData(responseJson?.data || []);
-      })();
-      // useEffect(() => {
-      //    fetch(fullUrl, {
-      //       headers: {
-      //          Authorization: `Bearer ${localStorage.getItem("token")}`,
-      //       },
-      //    })
-      //       .then((res) => res.json())
-      //       .then((res) => {
-      //          setData(res?.data || []);
-      //       });
+   const request = async () => {
+      const response = await fetch(fullUrl, {
+         headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+         },
+      });
 
+      const responseJson = await response.json();
+
+      setData(responseJson?.data || []);
+   };
+
+   useEffect(() => {
+      request();
       // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [searchStatus]);
 
