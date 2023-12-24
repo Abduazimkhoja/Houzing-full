@@ -76,8 +76,10 @@ const MyProperties = () => {
 
    return (
       <Global.Container>
-         <Global.FlexRowCenter margin="40px" jcsb="true">
-            <Global.H3 color="cyanBlue">My Properties</Global.H3>
+         <Global.FlexRowCenter mt="25px" margin="40px" jcsb="true">
+            <Global.H3 color="cyanBlue">
+               My Properties
+            </Global.H3>
             <Button onClick={() => navigate("/myproperties/createhouse")}>
                Add house
             </Button>

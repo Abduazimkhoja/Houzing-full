@@ -70,7 +70,7 @@ Global.FlexCenter = styled.div`
 Global.FlexRowCenter = styled.div`
    margin-bottom: ${(props) => props.margin || 0};
    width: ${(props) => props.width || "auto"};
-
+	margin-top: ${(props) => props.mt || 0};
    display: flex;
    align-items: center;
    ${(props) => props.jcsb && "justify-content: space-between;"}

@@ -20,13 +20,13 @@ const ProductPhoto = ({ modalLength, showModal, attachments }) => {
                return index === 3 && attachments.length > 5 ? (
                   <div className="image-other">
                      <img
-                        onClick={showModal}
+                        
                         className="image"
                         key={index}
                         src={imgPath}
                         alt=""
                      />
-                     <span>+{modalLength}</span>
+                     <div onClick={showModal}>+{modalLength}</div>
                   </div>
                ) : (
                   <img className="image" key={index} src={imgPath} alt="" />

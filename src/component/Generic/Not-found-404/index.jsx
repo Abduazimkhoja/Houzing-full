@@ -8,9 +8,9 @@ export const NotFound = () => {
    return (
       <Global.Flex>
          <Result
-            status="404"
-            title="404"
-            subTitle="Sorry, the page you visited does not exist."
+            status="500"
+            title="500"
+            subTitle="Sorry, something went wrong."
             extra={
                <Button onClick={() => navigate("/home")} type="primary">
                   Back Home
