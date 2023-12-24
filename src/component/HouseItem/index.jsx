@@ -1,50 +1,67 @@
-import React, { useEffect } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
-import useRequest from "../../hooks/useRequest";
 import ProductPhoto from "./photo";
 import ProductInfo from "./info";
 import { Global } from "../../root/style";
 import { Wrapper } from "./style";
 import UploaderUser from "./user";
 import Description from "./description";
-import ProductDocuments from "./Documents";
+// import ProductDocuments from "./Documents";
 import ProductLocation from "./location";
 import ProductProperty from "./property";
 import ProductFeatures from "./features";
 import ProductComment from "./comment";
+import { Spin } from "antd";
+import { useData } from "../../hooks/useData";
+import { Modal } from "./photo/modal";
 
 const HouseItem = () => {
-   const { data, fetchData } = useRequest();
+   const [modalStatus, setModalStatus] = useState(false);
+
    const params = useParams();
+   const [data, loading] = useData(`/houses/id/${params.id}`);
 
-   useEffect(() => {
-      fetchData({
-         url: `/houses/id/${params.id}`,
-      });
+   if (loading || !!data.length) return <Spin />;
 
-      window.scrollTo(0, 0);
+   const { attachments, description, user } = { ...data };
 
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-   }, [params]);
+   const dialogImageList = attachments.slice(5) || 0;
+
+   const showModal = () => {
+      setModalStatus(true);
+   };
+
+   const closeModal = () => {
+      setModalStatus(false);
+   };
 
    return (
       <Global.Container>
-         <ProductPhoto />
+         <Modal
+            close={closeModal}
+            imgList={dialogImageList}
+            status={modalStatus}
+         />
+         <ProductPhoto
+            modalLength={dialogImageList.length}
+            showModal={showModal}
+            attachments={attachments}
+         />
          <Wrapper>
             <Wrapper.Content>
                <ProductInfo data={data} />
-               <Description description={data?.data?.description} />
-               <ProductDocuments />
+               <Description description={description} />
+               {/* <ProductDocuments /> */}
                <Wrapper.Line />
-               <ProductLocation data={data && data} />
+               <ProductLocation data={data} />
                <Wrapper.Line />
-               <ProductProperty data={data && data} />
+               <ProductProperty data={data} />
                <Wrapper.Line />
                <ProductFeatures />
                <Wrapper.Line />
                <ProductComment />
             </Wrapper.Content>
-            <UploaderUser user={data?.data?.user} />
+            <UploaderUser user={user} />
          </Wrapper>
       </Global.Container>
    );
