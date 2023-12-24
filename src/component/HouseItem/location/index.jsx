@@ -5,7 +5,7 @@ import { location } from "../../../utils/ProductPageData";
 import AlignedBlock from "../../Generic/AlignedBlock";
 
 const ProductLocation = ({ data = {} }) => {
-   const { address, city, region, zipCode, country } = { ...data?.data };
+   const { address, city, region, zipCode, country } = { ...data };
 
    const newData = {
       address,

@@ -3,17 +3,18 @@ import useId from "../hooks/useId";
 import FavoritePage from "../pages/Favorite";
 import RegistrationPage from "../pages/Registration";
 import AddHousePage from "../pages/Addhouse";
+import { Spin } from "antd";
 
 const HomePage = React.lazy(() => import("../pages/Home"));
 const PropertiesPage = React.lazy(() => import("../pages/Properties"));
 const HouseItemPage = React.lazy(() => import("../pages/HouseItem"));
-const MyProfilePage = React.lazy(() => import("../pages/Progfile"));
+const MyPropertiesPage = React.lazy(() => import("../pages/MyProperties"));
 
 export const navbar = [
    {
       id: useId,
       element: (
-         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+         <React.Suspense fallback={<React.Fragment><Spin/></React.Fragment>}>
             <HomePage />
          </React.Suspense>
       ),
@@ -25,7 +26,7 @@ export const navbar = [
    {
       id: useId,
       element: (
-         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+         <React.Suspense fallback={<React.Fragment><Spin/></React.Fragment>}>
             <PropertiesPage />
          </React.Suspense>
       ),
@@ -37,7 +38,7 @@ export const navbar = [
    {
       id: useId,
       element: (
-         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+         <React.Suspense fallback={<React.Fragment><Spin/></React.Fragment>}>
             <FavoritePage />
          </React.Suspense>
       ),
@@ -49,7 +50,7 @@ export const navbar = [
    {
       id: useId,
       element: (
-         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+         <React.Suspense fallback={<React.Fragment><Spin/></React.Fragment>}>
             <HouseItemPage />
          </React.Suspense>
       ),
@@ -61,7 +62,7 @@ export const navbar = [
    {
       id: useId,
       element: (
-         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+         <React.Suspense fallback={<React.Fragment><Spin/></React.Fragment>}>
             <AddHousePage />
          </React.Suspense>
       ),
@@ -73,8 +74,8 @@ export const navbar = [
    {
       id: useId,
       element: (
-         <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
-            <MyProfilePage />
+         <React.Suspense fallback={<React.Fragment><Spin/></React.Fragment>}>
+            <MyPropertiesPage />
          </React.Suspense>
       ),
       title: "My Profile",

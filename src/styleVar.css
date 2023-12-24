@@ -16,3 +16,7 @@
    overflow: hidden;
    text-overflow: ellipsis;
 }
+
+.icon-default:hover.icon-default::before  {
+   font-weight: 600;
+}

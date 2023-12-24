@@ -4,12 +4,12 @@ import AlignedBlock from "../../Generic/AlignedBlock";
 import { property } from "../../../utils/ProductPageData";
 
 const ProductProperty = ({ data = {} }) => {
-   const { id, price, houseDetails, category } = { ...data?.data };
+   const { id, price, houseDetails, category } = { ...data };
 
    const newData = {
       id: `HZ${id}`,
       price: `$${price}`,
-      category: category || "not known",
+      category: category?.name,
       area: `${houseDetails?.area} Sq Ft`,
       yearBuilt: houseDetails?.yearBuilt,
       beds: houseDetails?.beds,

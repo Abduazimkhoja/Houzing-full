@@ -6,7 +6,7 @@ import { useQuery } from "react-query";
 import { PropertiesContext } from "../../context/Properties";
 
 const Favorite = () => {
-   const [data, setData] = useState([])
+   const [data, setData] = useState([]);
    const [, despatch] = useContext(PropertiesContext);
 
    const { REACT_APP_BASE_URL: url } = process.env;
@@ -19,18 +19,22 @@ const Favorite = () => {
                Authorization: `Bearer ${localStorage.getItem("token")}`,
             },
          });
-         return await res.json()
+         return await res.json();
       },
       {
          onSuccess: (res) => {
-            despatch({ type: "refetch", payload: refetch })
-            setData(res?.data || [])
+            despatch({ type: "refetch", payload: refetch });
+            setData(res?.data || []);
          },
       }
    );
 
    return (
       <Global.Container>
+         <Global.H3 mt = "30px" margin="20px">Favorite</Global.H3>
+         <Global.H4 margin="60px" ta="center">
+            Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
+         </Global.H4>
          <Wrapper>
             {data.length ? (
                data?.map((data) => {

@@ -8,7 +8,7 @@ export const CarouselWrap = styled.section`
       gap: 13px;
 
       &-bottom {
-         bottom: 32px;
+         bottom: 60px;
       }
 
       li {

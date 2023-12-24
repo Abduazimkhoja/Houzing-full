@@ -15,3 +15,4 @@ Wrapper.Line = styled.hr`
    height: 1px;
    background: var(--color-white-smoke);
 `;
+

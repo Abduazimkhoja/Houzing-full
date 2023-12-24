@@ -5,12 +5,17 @@ export const Main = styled.div`
    flex: 1 1 auto;
    display: flex;
    flex-direction: column;
+   justify-content: center;
 `;
 
 export const Global = styled.div`
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+`;
+
+Global.Wrapper = styled.main`
+   margin: ${(props) => props.margin || "0"};
 `;
 
 Global.FullBg = styled.section`
@@ -21,7 +26,7 @@ Global.FullBg = styled.section`
       colors(props.bg)};
    padding: ${(props) => props.padding} 0;
    height: ${(props) => props.height || "auto"};
-
+   margin-top: ${(props) => props.mt || 0};
    ${(props) =>
       props.footer &&
       `
@@ -29,7 +34,7 @@ Global.FullBg = styled.section`
          position: absolute;
          left: 0;
          bottom: 0;
-      `}
+      `};
 `;
 
 Global.Container = styled.div`
@@ -65,11 +70,12 @@ Global.FlexCenter = styled.div`
 Global.FlexRowCenter = styled.div`
    margin-bottom: ${(props) => props.margin || 0};
    width: ${(props) => props.width || "auto"};
-
+	margin-top: ${(props) => props.mt || 0};
    display: flex;
    align-items: center;
    ${(props) => props.jcsb && "justify-content: space-between;"}
    gap: ${(props) => props.gap};
+   flex-wrap: ${(props) => !props.fw && "wrap"};
 `;
 
 Global.Limiter = styled.div`
@@ -102,12 +108,13 @@ Global.H2 = styled.h2`
 
 Global.H3 = styled.h3`
    margin-bottom: ${(props) => props.margin || 0};
+   margin-top: ${(props) => props.mt || 0};
 
    font-weight: 600;
    font-size: 28px;
    line-height: 36px;
 
-   text-align: center;
+   text-align: ${(props) => props.ta || "center"};
    letter-spacing: -0.02em;
 
    color: ${(props) => colors(props.color || "cyanBlue")};
@@ -209,5 +216,7 @@ Global.Flex = styled.div`
    justify-content: ${(props) => props.jc || "center"};
    gap: ${(props) => props.gap || 0};
    margin-bottom: ${(props) => props.margin || 0};
-   ${(props) => props.flex && `flex: ${props.flex};`}
+   ${(props) => props.flex && `flex: ${props.flex};`};
+   flex-wrap: ${(props) => props.fw};
+   flex: 1;
 `;

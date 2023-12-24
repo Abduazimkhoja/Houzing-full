@@ -12,6 +12,7 @@ export const IntroBlock = styled.div`
       height: inherit;
 
       filter: brightness(0.35);
+		background-color: var(--color-gray);
 
       object-position: center;
       object-fit: cover;

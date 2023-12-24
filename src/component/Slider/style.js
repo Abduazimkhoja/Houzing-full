@@ -20,19 +20,25 @@ Wrapper.Window = styled.div`
    overflow: hidden;
 `;
 
-Wrapper.Content = styled.div`
+Wrapper.Content = styled.ul`
    display: flex;
-   gap: 20px;
-
    width: 100%;
    height: 100%;
    margin: 0 auto;
-   transition: transform 0.3s ease;
+   transition: transform 0.6s ease;
 
    ${(props) =>
       css`
          transform: translateX(${-props.slideIndex}%);
       `}
+
+   .slide__item {
+      padding: 10px;
+      min-width: calc(${(props) => 100 / props.quantity + "%"});
+   }
+   .slide__item:first-child {
+      margin-left: 0;
+   }
 `;
 
 Wrapper.Slide = styled.div`
@@ -57,7 +63,6 @@ Wrapper.Button = styled.button`
    border: 1px solid var(--border-color, #e6e9ec);
 
    background: var(--color-white, #fff);
-
 
    ${(props) => props.direction === "next" && "transform: rotate(180deg);"}
 

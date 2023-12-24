@@ -1,9 +1,10 @@
 import React from "react";
 import { Nav } from "./style";
 import { navbar } from "../../utils/navbar";
-import { Global } from "../../root/style";
-import { useNavigate } from "react-router-dom";
+import { Global, Main } from "../../root/style";
+import { Outlet, useNavigate } from "react-router-dom";
 import Login from "./login";
+import Foot from "../Footer";
 
 const Navbar = () => {
    const navigate = useNavigate();
@@ -34,6 +35,11 @@ const Navbar = () => {
                </nav>
             </Global.Container>
          </Global.FullBg>
+			
+			<Main>
+            <Outlet />
+         </Main>
+         <Foot />
       </>
    );
 };

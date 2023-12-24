@@ -33,7 +33,7 @@ export const property = [
 export const features = [
    [
       { id: 1, icon: "conditioner", text: "Air Conditioning" },
-      { id: 5, icon: "barbecue", text: "Barbeque" },
+      { id: 5, icon: "barbecue", text: "Barbecue" },
       { id: 9, icon: "dryer", text: "Dryer" },
       { id: 13, icon: "dumbbell", text: "Gym" },
    ],

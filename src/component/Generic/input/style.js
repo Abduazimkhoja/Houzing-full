@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
 
-// const filter = (props) => {};
-
 export const InputWrap = styled.div`
+   max-width: ${(props) => props.maxwidth || "auto"};
    width: ${(props) => props.width || "200px"};
    height: ${(props) => props.height || "44px"};
 
@@ -10,9 +9,6 @@ export const InputWrap = styled.div`
 
    display: flex;
    align-items: center;
-   gap: 8px;
-
-   padding: 0 16px;
 
    color: var(--color-cyan-blue);
 
@@ -26,16 +22,25 @@ export const InputWrap = styled.div`
    &:hover {
       border-color: var(--color-blue);
    }
+
+   i {
+      margin-left: 16px;
+   }
 `;
 
 InputWrap.Input = styled.input`
    width: 100%;
    height: 100%;
+
+   padding: 0 8px;
+
    font-size: 14px;
    color: var(--color-cyan-blue);
 
    &::placeholder {
       font-size: 14px;
       color: var(--color-cyan-blue);
+		opacity: .3;
    }
 `;
+

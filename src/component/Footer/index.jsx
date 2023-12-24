@@ -1,13 +1,13 @@
 import React from "react";
-import { Footer, Social } from "./style";
-import { FooterList } from "../../utils/FooterList";
-import { Global } from "../../root/style";
 import { useNavigate } from "react-router-dom";
+import { Global } from "../../root/style";
+import { FooterList } from "../../utils/FooterList";
+import { Footer, Social } from "./style";
 
 export default function Foot() {
-   const navigate = useNavigate()
+   const navigate = useNavigate();
    return (
-      <Global.FullBg height="420px" bg="cyanBlue">
+      <Global.FullBg mt="40px" height="420px" bg="cyanBlue">
          <Global.Container>
             <Footer>
                <Footer.Head>
@@ -51,7 +51,7 @@ export default function Foot() {
                </Footer.Head>
 
                <Footer.Bottom>
-                  <Global.Logo onClick = {() => navigate("/home")}/>
+                  <Global.Logo onClick={() => navigate("/home")} />
                   <h5 className="productBy">
                      Copyright © 2021 CreativeLayers. All Right Reserved.
                   </h5>
