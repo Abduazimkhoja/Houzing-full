@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { navbar } from "../utils/navbar";
 import Navbar from "../component/Navbar";
-import { Search } from "../component/Search";
 import { Global } from "./style";
 import { NotFound } from "../component/Generic/Not-found-404";
 
