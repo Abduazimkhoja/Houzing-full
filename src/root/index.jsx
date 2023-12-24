@@ -4,20 +4,21 @@ import { navbar } from "../utils/navbar";
 import Navbar from "../component/Navbar";
 import { Search } from "../component/Search";
 import { Global } from "./style";
+import { NotFound } from "../component/Generic/Not-found-404";
 
 const Root = () => {
    return (
       <Global>
          <BrowserRouter>
             <Routes>
-               <Route element={<><Navbar /><Search/></>}>
+               <Route element={<Navbar />}>
                   {navbar.map(({ id, path, element }) => (
                      <Route key={id} path={path} element={element} />
                   ))}
                </Route>
 
                <Route path="/" element={<Navigate to="/home" />} />
-               <Route path="*" element={<h1>404 Not Fond</h1>} />
+               <Route path="*" element={<NotFound />} />
             </Routes>
          </BrowserRouter>
       </Global>
