@@ -6,7 +6,6 @@ import { Global } from "../../../root/style";
 const Carousel = ({ children, dots, outside }) => {   
    const slider = useRef();
    const onChange = (currentSlide) => {
-      console.log(currentSlide);
    };
 
    const onMove = ({

@@ -4,7 +4,7 @@ import AlignedBlock from "../../Generic/AlignedBlock";
 import { property } from "../../../utils/ProductPageData";
 
 const ProductProperty = ({ data = {} }) => {
-   const { id, price, houseDetails, category } = { ...data?.data };
+   const { id, price, houseDetails, category } = { ...data };
 
    const newData = {
       id: `HZ${id}`,

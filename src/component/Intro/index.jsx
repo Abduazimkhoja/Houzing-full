@@ -2,11 +2,8 @@ import React from "react";
 import { Carousel, Button, Details } from "../Generic";
 import { IntroBlock } from "./style";
 import { Global } from "../../root/style";
-import { useData } from "../../hooks/useData";
 
-const Intro = () => {
-   const [data] = useData("/houses/list");
-
+const Intro = ({data}) => {
    return (
       <Carousel>
          {data.map(

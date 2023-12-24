@@ -22,8 +22,6 @@ const Media = (formik) => {
       }
    };
 
-   console.log(imageUrl);
-
    const onDeleteImage = (index) => {
       formik.setFieldValue(
          "attachments",

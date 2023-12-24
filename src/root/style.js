@@ -5,6 +5,7 @@ export const Main = styled.div`
    flex: 1 1 auto;
    display: flex;
    flex-direction: column;
+   justify-content: center;
 `;
 
 export const Global = styled.div`
@@ -215,6 +216,7 @@ Global.Flex = styled.div`
    justify-content: ${(props) => props.jc || "center"};
    gap: ${(props) => props.gap || 0};
    margin-bottom: ${(props) => props.margin || 0};
-   ${(props) => props.flex && `flex: ${props.flex};`}
-   flex-wrap: ${(props) => props.fw}
+   ${(props) => props.flex && `flex: ${props.flex};`};
+   flex-wrap: ${(props) => props.fw};
+   flex: 1;
 `;

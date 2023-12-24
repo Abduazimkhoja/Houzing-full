@@ -1,13 +1,11 @@
 import React from "react";
-import { useData } from "../../../hooks/useData";
 // import { useNavigate } from "react-router-dom";
 import HouseCard from "../../Generic/card/house";
 import { Global } from "../../../root/style";
 import { Wrapper } from "./style";
 import Slider from "../../Slider";
 
-const Recommended = () => {
-   const [data] = useData("/houses/list");
+const Recommended = ({data}) => {
    // const navigate = useNavigate();
 
    return (

@@ -2,7 +2,7 @@ import React from "react";
 import { Global } from "../../../root/style";
 import Details from "../../Generic/house-details";
 
-const ProductInfo = ({ data: { data = {} } }) => {
+const ProductInfo = ({ data }) => {
    const {
       address,
       city,
