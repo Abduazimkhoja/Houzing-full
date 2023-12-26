@@ -1,0 +1,710 @@
+{
+  "success": true,
+  "message": "House list",
+  "data": [
+    {
+      "id": 7,
+      "name": "Stylish LA Apartment",
+      "description": "Bask in the sunlight and fresh air in this penthouse with an expansive terrace. Modern design and an open layout make it perfect for those who appreciate style and freedom.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 2,
+        "garage": 1,
+        "area": 1000,
+        "beds": 3,
+        "yearBuilt": 1990
+      },
+      "price": 5000,
+      "salePrice": 0,
+      "location": {
+        "longitude": -118.2437,
+        "latitude": 34.0522
+      },
+      "address": "101 Serenity Lane",
+      "city": "Peaksville",
+      "region": "North",
+      "country": "United States",
+      "zipCode": "90012",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/664e4490fdbc5528d3c24dae67aa7083-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/607362288194dee70d204c56097f9371-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/bb441cc25999d19aaf772e62c138251d-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/cbe6aef117f936cb4a3809affdb6d108-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/8413f28822cfac622af7f657a25d0d51-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/37c9473bd1d8e0d1ce8a88ad03d539d1-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/beb0519aa0f66973b264a2f2fdb62998-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/4e4ef487b4984c354b021e19ec02bf6a-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/ed7e9b5b97bcbb26700a406c26cc5a0f-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "apartments"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 9,
+      "name": "Modern LA Apartment",
+      "description": "Find serenity in this coastal retreat, where ocean breezes and timeless design converge. A perfect blend of relaxation and sophistication awaits in this seaside haven.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 2,
+        "garage": 1,
+        "area": 1000,
+        "beds": 3,
+        "yearBuilt": 1975
+      },
+      "price": 5000,
+      "salePrice": 0,
+      "location": {
+        "longitude": -118.2437,
+        "latitude": 34.0522
+      },
+      "address": "456 Oak Street",
+      "city": "Calmington",
+      "region": "Northeast",
+      "country": "United States",
+      "zipCode": "90012",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/6701a250bf8b4998f1c1dacd4baf5115-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/a51ce1886d697c9528c143f400a817f5-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/2c2bedec81f6c0cfdc6c89dad1294ac3-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/914ef1d21e341a393892448b1c54ca66-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/0a5750c5275baec11038b2ae456d3d3e-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/97d4316adadd9ecbb1c12ae85017b904-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/1a19d14df0d6defe40700d276544e494-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/7e16bf7254850f799bc2a68daa71b860-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/247d3172767d0a14536964d872a92e65-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/8ce20511fee1deb16689e4c78070756b-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/85bd4e633e99d6f5409083c10a2810a3-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/13f77bd000be092dd4f45a8ecc1e243d-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/5c47b92ade0c498bfbde5c4b69545e21-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/a44e74cfbb789ce027693f5ac596a9eb-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "villa"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 8,
+      "name": "Urban Chic Penthouse",
+      "description": "Experience artistic living in this eclectic residence set in a historical backdrop. Unique interiors and a blend of history and modernity create a one-of-a-kind living space.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 2,
+        "garage": 1,
+        "area": 400,
+        "beds": 3,
+        "yearBuilt": 1985
+      },
+      "price": 1900,
+      "salePrice": 1850,
+      "location": {
+        "longitude": -118.2437,
+        "latitude": 34.0522
+      },
+      "address": "Joh Street",
+      "city": "Metropolis",
+      "region": "Central",
+      "country": "United States",
+      "zipCode": "90012",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/b9b485ffeac93bdac542095920480ed3-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/b5bb93804b4735b5f1ebabd194f91e53-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/cbaafd578dc89ff0183a4101fc675e32-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/b72722164d402fb5b61de0b4e32e41cf-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/913487b885f155a57ec9979a4db7ae2b-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/b0a7bbffa10c762d861fe1c5ad7556f9-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/6687af0ed6e50022030e7ff9196b15c8-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/6a52ab67d83c0073ef3a534c8c43098c-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/f65f0ecc42ed6b355de91c4f5c5eea72-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/a101bcf27927324adb2fb1d51994c3a9-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/2a200c79785d408e2615cc99d9e6053a-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "office"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 22,
+      "name": "Modern Residence",
+      "description": "A beautiful modern home with spacious rooms and top-notch amenities.",
+      "user": {
+        "id": 2,
+        "firstname": "test",
+        "lastname": "test",
+        "email": "test@gmail.com"
+      },
+      "houseDetails": {
+        "room": 8,
+        "bath": 3,
+        "garage": 2,
+        "area": 2500,
+        "beds": 4,
+        "yearBuilt": 2010
+      },
+      "price": 5000,
+      "salePrice": 4800,
+      "location": null,
+      "address": "123 Main Street",
+      "city": "New City",
+      "region": "California",
+      "country": "United States",
+      "zipCode": "12345",
+      "attachments": [
+        {
+          "imgPath": "https://i.pinimg.com/originals/94/b6/99/94b699a2893c2b26a63546ddef527a1c.jpg"
+        },
+        {
+          "imgPath": "https://i.pinimg.com/originals/00/7f/51/007f51b677230a69f08125c674c4d6ac.jpg"
+        },
+        {
+          "imgPath": "https://i.pinimg.com/originals/c9/a3/2a/c9a32a82d1a2d5b65298fdbda2d9a51c.jpg"
+        }
+      ],
+      "category": {
+        "name": "townhouses"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 6,
+      "name": "Tranquil Retreat House",
+      "description": "Embrace a traditional lifestyle in this cozy cottage surrounded by a lush green garden. Charming and functional, it invites you to create your own haven of tranquility.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 3,
+        "bath": 2,
+        "garage": 1,
+        "area": 1200,
+        "beds": 1,
+        "yearBuilt": 2010
+      },
+      "price": 5000,
+      "salePrice": 4900,
+      "location": {
+        "longitude": -118.2437,
+        "latitude": 34.0522
+      },
+      "address": "2 Street Big-kampus",
+      "city": "Los Angeles",
+      "region": "West",
+      "country": "United States",
+      "zipCode": "90012",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/fa9972fbb42e93a553caa2d5d56a27cd-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/970bf9a02593ad40d6be8f8c3a8b8735-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/6abefefad0194e80969a3f1ec9879858-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/c4940cb50b6f303b9ac555f286bc5de1-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/c50d84f2dd24f8776108af5000ada495-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/ee3671c63ad21a3f29e0b7fdb5a5e41d-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/10ded21fb61e284ebf28b3475149eaf7-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/a051febc49dabfb6b35fa589c11b7d9f-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "townhouses"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 10,
+      "name": "House in New York",
+      "description": "Charming and cozy apartment in the heart of New York City.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 1,
+        "garage": 1,
+        "area": 300,
+        "beds": 2,
+        "yearBuilt": 1950
+      },
+      "price": 3200,
+      "salePrice": 3100,
+      "location": {
+        "longitude": -74.006,
+        "latitude": 40.7128
+      },
+      "address": "Pup Avenue 4u",
+      "city": "New York",
+      "region": "Southeast",
+      "country": "United States",
+      "zipCode": "10001",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/1bd83c72894e5a15030a7a0c3c3aa81b-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/d86a8c92cb0a9ebdd59bb6fed73578ef-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/22395d917d1701bb3390b78f55e3b7c9-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/21d8259af32693c2b7d8b8b739947a26-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/38a34eeb612c3a81f685619b4c8062b6-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/bf16971f7ee4db149462fb2235db6c62-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/83ba40127ebcc4fbda493f942a79fba9-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/1a1e9f553f70343dbd666245e6af4682-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/736b09ef280ca54c939f20c189e55af9-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/174f5486a97454ccd241a8d430ec8aae-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/1bd0834f82119352d5694df3b17685e7-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/ea0143f932dc58f696b3ee7c7221e3c5-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "warehouses"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 4,
+      "name": "Green Oasis Cottage",
+      "description": "Immerse yourself in modern comfort with this urban home, offering a unique sunset view. Elegant design and amenities make it an ideal space for city living.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 2,
+        "garage": 1,
+        "area": 1200,
+        "beds": 3,
+        "yearBuilt": 1990
+      },
+      "price": 5000,
+      "salePrice": 0,
+      "location": {
+        "longitude": -118.2437,
+        "latitude": 34.0522
+      },
+      "address": "456 Meadow Lane",
+      "city": "Brightville",
+      "region": "Northern",
+      "country": "United States",
+      "zipCode": "90012",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/212b597d0d102ad7f0c1e46f6b058963-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/c9b003725da5d7ff2c2a63419be7096c-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/35ab368f6ec971ca39db1dcfedea3e01-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/40779a46d0f06a1bbdb594ad5a7bd88d-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/fce3ace6f935252601a88478cee4f40f-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/751a02262526bf317fb30d21fc408848-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/308647b7d73779be3db39bca49af2296-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/3c2db1bbb463353ae6534b48dc3cba91-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/4b08a3a9ef22357e19f32f544df31439-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/01b0ccd4e234aec25bf3613aa302de98-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/ca2c7fd061efc083c22056ec477c6ea0-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/7967ab0120dcceea800e03ae5ccf7b7c-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/05b802adca8cfedf7d8586a454d36c5a-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/19b84af360fd3572fc344bfe1fa1838f-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/262b8aa000595cc762266c8a2b4478ca-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/0c4fa2b91feceacb12cf7240d42dd570-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/42dba7ca600bc98a8a795444b0885691-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "office"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 5,
+      "name": "Mountain View Villa",
+      "description": "Discover luxury in this villa with panoramic mountain views. Spacious interiors, top-notch amenities, and a secluded location create the perfect balance of luxury and nature.",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 2,
+        "garage": 1,
+        "area": 1000,
+        "beds": 6,
+        "yearBuilt": 2005
+      },
+      "price": 4500,
+      "salePrice": 0,
+      "location": {
+        "longitude": -118.2437,
+        "latitude": 34.0522
+      },
+      "address": "789 Summit Avenue",
+      "city": "Greenville",
+      "region": "South",
+      "country": "United States",
+      "zipCode": "90012",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/d7d07dc8769f3e137f1dfee46715c953-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/f266748627e2667b3b70dd749eec4f82-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/2c20d7b8767b8dab779d2a5849d3b628-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/e8fe04b48628fe7b66175dba766c99aa-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/c1a4dd325c09e87a5d662b4341a80386-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/9c9e37969d430f23c5ba978a35132ca0-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/bf1670349896df48504ab7db07c9b2e5-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/8dd8eb321a87c7f65dd521b1fb70e1fa-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/d0c14e2cf5023c3918c28eab0e72008b-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/aa1369ea6be1ccda7f4b807d7c9db03d-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/c6594049d651df6f2684981a1b2e8d86-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/61d81cf96f48545946267048138184fb-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/aa02a8b996735678c30dc2accf6a425f-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/1d033ef450f3c1f351d36a371561eabb-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "villa"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 3,
+      "name": "Sunny Haven Residence",
+      "description": "Enjoy generous rooms and a well-maintained backyard in this perfect family home. Charming interiors and a welcoming atmosphere make it an ideal space for your family",
+      "user": {
+        "id": 1,
+        "firstname": "aaaa",
+        "lastname": "aaaa",
+        "email": "web@gmail.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 2,
+        "garage": 1,
+        "area": 1000,
+        "beds": 3,
+        "yearBuilt": 2000
+      },
+      "price": 4500,
+      "salePrice": 0,
+      "location": {
+        "longitude": -117.1611,
+        "latitude": 32.7157
+      },
+      "address": "123 Sunshine Street",
+      "city": "San Diego",
+      "region": "East",
+      "country": "United States",
+      "zipCode": "92101",
+      "attachments": [
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/75b29e054f681407ca3c5a03bd643db8-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/367993d4171f9a1dbe06f36fdc5e8e8e-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/9bf26fa31853fc00b4edb9753784776b-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/3569baec662803ceb2753591818937d9-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/96e79597f68d922055598f19d67b0693-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/21d7fd4eaadda6bb70590770b67ae887-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/7e1bed01f9de091334d38384f6f81051-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/c0fadad448a4f20bbeb6cdf9508fca32-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/727beacfe95bbe05477c2945ac06cba4-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/be98d0cb93c914709ffc13f7b7e11b7d-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "http://test.jpg"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/742a0b7d6c627448a26698c92b70760e-cc_ft_1536.webp"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/fbc06bbfe6173c25c15b0a574e081653-cc_ft_576.webp"
+        },
+        {
+          "imgPath": "https://www.zillowstatic.com/floor_map/8ed892f8-f709-0d36-5c48-b559990e60f5/hero.png"
+        },
+        {
+          "imgPath": "https://photos.zillowstatic.com/fp/693d479130566c9961ab3dd928449831-cc_ft_576.webp"
+        }
+      ],
+      "category": {
+        "name": "warehouses"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    },
+    {
+      "id": 23,
+      "name": "Beautiful Home",
+      "description": "A beautiful property for sale",
+      "user": {
+        "id": 2,
+        "firstname": "test",
+        "lastname": "test",
+        "email": "test@gmail.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 3,
+        "garage": 2,
+        "area": 2000,
+        "beds": 4,
+        "yearBuilt": 2020
+      },
+      "price": 5700,
+      "salePrice": 4800,
+      "location": {
+        "longitude": -74.006,
+        "latitude": 40.7128
+      },
+      "address": "123 Main Street",
+      "city": "New York",
+      "region": "East",
+      "country": "United States",
+      "zipCode": "10001",
+      "attachments": [
+        {
+          "imgPath": "https://i.pinimg.com/originals/94/45/d1/9445d1af87e839228b5fcf3066bc5d7d.jpg"
+        },
+        {
+          "imgPath": "https://fikiwiki.com/uploads/posts/2022-02/1644873815_7-fikiwiki-com-p-uyutnii-dom-krasivie-kartinki-7.jpg"
+        },
+        {
+          "imgPath": "https://wallpapers.com/images/hd/dream-house-pictures-1600-x-1060-bptl7b7s3878vc3q.jpg"
+        },
+        {
+          "imgPath": "https://i.pinimg.com/originals/05/c7/9e/05c79e665d08bce8114f462410f18dd6.jpg"
+        }
+      ],
+      "category": {
+        "name": "house"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "homeAmenitiesDto": null
+    }
+  ],
+  "map": {
+    "size": 20,
+    "total_elements": 10,
+    "total_pages": 1
+  },
+  "status": "OK"
+}

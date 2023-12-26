@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import housesList from "../locale/data/housesList.json";
+import categoriesList from "../locale/data/categoriesList.json";
+/**
+ *
+ * @param {string} shiftUrl
+ * @param {boolean} needSearch
+ * @returns [data, loading]
+ */
 
 export const useData = (shiftUrl = "", needSearch = false) => {
    const [data, setData] = useState([]);
@@ -9,7 +17,18 @@ export const useData = (shiftUrl = "", needSearch = false) => {
    const { REACT_APP_BASE_URL: url } = process.env;
 
    const searchStatus = needSearch ? search : "";
+
    const fullUrl = `${url}${shiftUrl}${searchStatus}`;
+
+   const params = useParams();
+
+   const localeDataListUrl = {
+      "/houses/list": housesList.data,
+      "/categories/list": categoriesList.data,
+      [`/houses/id/${params.id}`]: housesList.data.find(
+         (item) => item.id === +params.id
+      ),
+   }[shiftUrl];
 
    const request = async () => {
       try {
@@ -19,14 +38,17 @@ export const useData = (shiftUrl = "", needSearch = false) => {
             },
          });
 
+         let responseJson;
+
          if (!response.ok) {
             throw new Error(`Ошибка при запросе: ${response.statusText}`);
          }
 
-         const responseJson = await response.json();
+         responseJson = await response.json();
 
-         setData(responseJson?.data || []);
+         setData(responseJson.data || []);
       } catch (error) {
+         setData(localeDataListUrl || []);
          console.error("Произошла ошибка при запросе:", error.message); // добавлен отладочный вывод
       } finally {
          setLoading(false);

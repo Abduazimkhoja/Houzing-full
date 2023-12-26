@@ -1,0 +1,72 @@
+{
+	"success": true,
+	"message": "Category List",
+	"data": [
+		{
+			"id": 1,
+			"createdAt": "2023-06-20T10:33:51.146321Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "house"
+		},
+		{
+			"id": 2,
+			"createdAt": "2023-06-20T10:34:59.487789Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "apartments"
+		},
+		{
+			"id": 3,
+			"createdAt": "2023-06-20T10:35:14.105298Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "office"
+		},
+		{
+			"id": 4,
+			"createdAt": "2023-06-20T10:35:25.013798Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "villa"
+		},
+		{
+			"id": 5,
+			"createdAt": "2023-06-20T10:35:31.154327Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "cottage"
+		},
+		{
+			"id": 6,
+			"createdAt": "2023-06-20T10:35:40.775134Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "townhouses"
+		},
+		{
+			"id": 7,
+			"createdAt": "2023-06-20T10:35:52.978486Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "commercial buildings"
+		},
+		{
+			"id": 8,
+			"createdAt": "2023-06-20T10:36:00.628260Z",
+			"updateAt": null,
+			"createdBy": null,
+			"updateBy": null,
+			"name": "warehouses"
+		}
+	],
+	"map": {},
+	"status": "OK"
+}
