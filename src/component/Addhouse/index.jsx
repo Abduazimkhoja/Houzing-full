@@ -62,11 +62,17 @@ const AddHouse = () => {
             authorize: true,
             body: values,
          };
-         id ? message.success("House updated") : message.success("House added");
 
-         fetchData(request).then(
-            (res) => res.success && navigate("/myproperties")
-         );
+         fetchData(request).then((res) => {
+            if (res.success) {
+               id
+                  ? message.success("House updated")
+                  : message.success("House added");
+               navigate("/myproperties");
+            } else {
+               message.error("fill in all the fields");
+            }
+         });
       },
    });
 
