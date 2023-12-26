@@ -1,4 +1,4 @@
-import { Table, message } from "antd";
+import { Spin, Table, message } from "antd";
 import ListingTitle from "./ListingTitle";
 import { Global } from "../../root/style";
 import { Button } from "../Generic";
@@ -32,6 +32,8 @@ const MyProperties = () => {
          }
       });
    };
+
+   if (!data) return <Spin />;
 
    const columns = [
       {
@@ -77,9 +79,7 @@ const MyProperties = () => {
    return (
       <Global.Container>
          <Global.FlexRowCenter mt="25px" margin="40px" jcsb="true">
-            <Global.H3 color="cyanBlue">
-               My Properties
-            </Global.H3>
+            <Global.H3 color="cyanBlue">My Properties</Global.H3>
             <Button onClick={() => navigate("/myproperties/createhouse")}>
                Add house
             </Button>
