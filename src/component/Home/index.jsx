@@ -15,7 +15,6 @@ const Home = () => {
    const [data, loading] = useData("/houses/list");
 
    if (loading || !data) return <Spin />;
-   console.log(data);
 
    return (
       <>
