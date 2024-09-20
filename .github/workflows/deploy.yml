@@ -25,5 +25,7 @@ jobs:
 
       - name: 🔨 Build Project
         run: |
+          npm cache clean --force
+          rm -rf node_modules
+          rm -f package-lock.json
           npm install --force
-          npm run build
