@@ -3,18 +3,18 @@ on: push
 jobs:
   build:
     name: 🛠️ Build
-    strategy:
-      matrix:
-        nodeVersion: [20, 18, 17]
+    # strategy:
+    #   matrix:
+    #     nodeVersion: [20, 18, 17]
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: Use Node.js ${{matrix.nodeVersion}}
+      - name: Use Node.js 18
         uses: actions/setup-node@v2
         with:
-          node-version: "${{matrix.nodeVersion}}.x"
+          node-version: "18.x"
 
       - name: Install Yarn
         run: npm install --global yarn
@@ -29,6 +29,8 @@ jobs:
         run: |
           yarn install
           yarn run build
+      # - name: 📡 Deploy
+
 
   # deploy:
   #   needs: [build]
