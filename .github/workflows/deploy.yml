@@ -20,8 +20,8 @@ jobs:
       - name: create env file
         run: |
           touch .env
-          echo NEXT_PUBLIC_DOMAIN=${{ secrets.NEXT_PUBLIC_DOMAIN }} >> .env
-          echo DEFAULT_LANG=ru >> .env
+          echo REACT_APP_PUBLIC_URL=${{ secrets.REACT_APP_PUBLIC_URL }} >> .env
+          echo REACT_APP_BASE_URL=${{ secrets.REACT_APP_BASE_URL }} >> .env
 
       - name: 🔨 Build Project
         run: |
