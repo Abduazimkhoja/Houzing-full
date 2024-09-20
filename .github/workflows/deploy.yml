@@ -1,20 +1,20 @@
-on:
-  push:
-    branches: [ main ]
 name: 🚀 Deploy website on push
-
+on: push
 jobs:
-  Explore-GitHub-Actions:
-    name: 🎉 Deploy
+  build:
+    name: 🛠️ Build
+    strategy:
+      matrix:
+        nodeVersion: [20, 18, 17]
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: Use Node.js 18
+      - name: Use Node.js ${{matrix.nodeVersion}}
         uses: actions/setup-node@v2
         with:
-          node-version: "18.x"
+          node-version: "${{matrix.nodeVersion}}.x"
 
       - name: Install Yarn
         run: npm install --global yarn
@@ -29,3 +29,30 @@ jobs:
         run: |
           yarn install
           yarn run build
+
+  # deploy:
+  #   needs: [build]
+  #   name: 📡 Deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: 🚚 Get latest code
+  #       uses: actions/checkout@v3
+
+  #     - name: Use Node.js 18
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: "18.x"
+
+  #     - name: Install Yarn
+  #       run: npm install --global yarn
+
+  #     - name: create env file
+  #       run: |
+  #         touch .env
+  #         echo REACT_APP_PUBLIC_URL=${{ secrets.REACT_APP_PUBLIC_URL }} >> .env
+  #         echo REACT_APP_BASE_URL=${{ secrets.REACT_APP_BASE_URL }} >> .env
+
+  #     - name: 🔨 Build Project
+  #       run: |
+  #         yarn install
+  #         yarn run build
