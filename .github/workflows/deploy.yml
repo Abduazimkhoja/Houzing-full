@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push
+
+jobs:
+  Explore-GitHub-Actions:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.10.0"
+
+      - name: create env file
+        run: |
+          touch .env
+          echo NEXT_PUBLIC_DOMAIN=${{ secrets.NEXT_PUBLIC_DOMAIN }} >> .env
+          echo DEFAULT_LANG=ru >> .env
+
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run build
